@@ -66,8 +66,61 @@ export const expertise = [
       "Deneyip geri bildirimle bir sonraki sürümü şekillendirmek",
     ],
     example:
-      "AccessAI web erişilebilirliğine, Karmatik fikri ise e-ticaret kârlılığına odaklanıyor.",
-    project: "/projects/accessai",
+      "Kârmatik, sipariş kârlılığı ve buybox takibi için yayında. AccessAI ise web erişilebilirliğine odaklanıyor.",
+    project: "/projects/karmatik",
     aside: "MVP küçük başlar. Fikirler toplantıya kalabalık gelir.",
+  },
+  {
+    id: "meta",
+    number: "05",
+    name: "Meta reklamları",
+    label: "AKTİF HESAP YÖNETİMİ",
+    line: "Panel açık. İş sahada.",
+    description:
+      "Şu anda aktif olarak 8 Meta hesabı yönetiyorum. Reklam yönetimini CRM, müşteri yolculuğu ve e-ticaret deneyimimle birlikte ele alıyorum.",
+    tasks: [
+      "Hesapların günlük yönetimini yürütmek",
+      "Reklam çalışmalarını müşteri yolculuğuyla birlikte düşünmek",
+      "Verileri sonraki kararlar için değerlendirmek",
+    ],
+    example:
+      "Aktif yönetimde 8 Meta hesabı; büyüme çalışmalarımın günlük uygulama alanı.",
+    aside: "Reklamı açtık diye çay molası başlamıyor.",
+  },
+  {
+    id: "architecture",
+    number: "06",
+    name: "Ürün mimarisi",
+    label: "MİN MALİYET × MAKSİMUM ÇIKTI",
+    line: "Her projeye aynı stack yakışmaz.",
+    description:
+      "Bir ürünün altyapısını alışkanlığa göre değil; trafik, veri, arka plan işleri ve bütçesine göre kuruyorum. Serverless, yönetilen veritabanı veya cihaz üzerinde çalışma seçeneklerini gerçek ihtiyaca göre değerlendiriyorum.",
+    tasks: [
+      "Ürünün gerçek yükünü ve işletme maliyetini birlikte haritalamak",
+      "Boşta maliyeti düşük, büyüdüğünde ölçeklenebilir bir yapı seçmek",
+      "Model kalitesi ve token maliyetini ölçüp sağlayıcı kararını yenilemek",
+    ],
+    example:
+      "AI Kemal’de Cloudflare Workers + Supabase; Independent AI’da Vercel + Neon; WorkspaceOS’ta cihaz üzerinde çalışan bir yaklaşım. Mimari, ürünle birlikte seçiliyor.",
+    project: "/projects/karmatik",
+    aside: "Stack seçimi görünmez. Faturası oldukça görünür.",
+  },
+  {
+    id: "research",
+    number: "07",
+    name: "Web araştırması & veri",
+    label: "DOĞRU TAŞI KALDIRMAK",
+    line: "Bilgiyi aramıyorum; nerede olacağını çözüyorum.",
+    description:
+      "İnternette hangi verinin nerede bulunacağını, bir kaynağın yapısının nasıl okunacağını ve gerektiğinde bilginin nasıl düzenli biçimde çıkarılacağını biliyorum. Arama, kaynak doğrulama, scraping ve veri temizleme benim için aynı araştırma zincirinin parçaları.",
+    tasks: [
+      "Soruyu doğru arama stratejisine ve kaynak haritasına çevirmek",
+      "Sayfa, ağ isteği ve yapılandırılmış veri katmanlarını incelemek",
+      "Veriyi temizleyip doğrulayarak üründe kullanılabilir hâle getirmek",
+    ],
+    example:
+      "Pazar, rakip veya ürün verisi gerektiğinde önce en güvenilir kaynağı buluyor; sonra uygun yöntemle tekrarlanabilir bir veri akışı kuruyorum.",
+    aside:
+      "İnsanlar bilgi için her taşın altına bakar. Ben hangi taşı kaldıracağımı bilirim.",
   },
 ];

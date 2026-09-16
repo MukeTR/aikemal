@@ -1,6 +1,6 @@
 import { Link, useParams } from "react-router-dom";
 import { ArrowLeft, ArrowUpRight, Code2 } from "lucide-react";
-import { projects } from "@aikemal/shared";
+import { projects, projectStatusLabels } from "@aikemal/shared";
 export function ProjectDetailPage() {
   const { slug } = useParams();
   const p = projects.find((x) => x.slug === slug);
@@ -20,8 +20,7 @@ export function ProjectDetailPage() {
         <ArrowLeft size={16} /> Atölyeye dön
       </Link>
       <p className="eyebrow detail-category">
-        {p.category} /{" "}
-        {p.status === "planned" ? "FİKİR AŞAMASINDA" : "GITHUB PROJESİ"}
+        {p.category} / {projectStatusLabels[p.status]}
       </p>
       <h1>{p.name}</h1>
       <p className="detail-lead">{p.description}</p>
@@ -42,11 +41,28 @@ export function ProjectDetailPage() {
             <h2>Nasıl ele aldık?</h2>
             <p>{p.approach}</p>
           </section>
+          {p.builderNote && (
+            <section>
+              <p className="eyebrow">TEK KİŞİLİK ÜRÜN EKİBİ</p>
+              <h2>Sıfırdan, uçtan uca.</h2>
+              <p>{p.builderNote}</p>
+            </section>
+          )}
         </div>
         <aside className="case-note">
           <p className="eyebrow">PROJE NOTU</p>
           <p>{p.scope}</p>
           {p.credit && <p className="credit">{p.credit}</p>}
+          {p.website && (
+            <a
+              className="button dark"
+              href={p.website}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Kârmatik’i aç <ArrowUpRight size={16} />
+            </a>
+          )}
           {p.github && (
             <a
               className="button dark"
@@ -59,6 +75,51 @@ export function ProjectDetailPage() {
           )}
         </aside>
       </div>
+      {p.architectureNote && (
+        <aside className="architecture-note">
+          <div>
+            <p className="eyebrow">MİMARİ PRENSİBİ</p>
+            <h2>Minimum maliyet, maksimum çıktı.</h2>
+          </div>
+          <p>{p.architectureNote}</p>
+        </aside>
+      )}
+      {p.features && (
+        <section className="project-capabilities">
+          <p className="eyebrow">03 / ÜRÜNÜN İÇİNDE</p>
+          <h2>Bir mağazanın günlük işleri, birlikte.</h2>
+          <div className="capability-grid">
+            {p.features.map((feature) => (
+              <article key={feature.title}>
+                <h3>{feature.title}</h3>
+                <p>{feature.description}</p>
+                <a
+                  className="text-link"
+                  href={feature.source}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Özelliği incele <ArrowUpRight size={16} />
+                </a>
+              </article>
+            ))}
+          </div>
+          {p.integrations && (
+            <aside className="integration-note">
+              <p className="eyebrow">KANALLAR ARASINDA</p>
+              <p>{p.integrations}</p>
+              <a
+                className="text-link"
+                href="https://karmatik.io/entegrasyonlar"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Entegrasyonları gör <ArrowUpRight size={16} />
+              </a>
+            </aside>
+          )}
+        </section>
+      )}
       <div className="small-cta">
         <h2>Başka bir problem, benzer bir merak?</h2>
         <Link to="/ask" className="text-link">

@@ -18,8 +18,9 @@ export function ExpertiseSection() {
         </Link>
       </div>
       <p className="section-intro">
-        Claude, ChatGPT, CRM, otomasyon… Ayrı sekmelerin ötesinde, aynı üretim
-        alışkanlığının parçaları.
+        Claude, ChatGPT, web araştırması, veri çıkarımı, CRM, ürün mimarisi ve
+        aktif yönettiğim 8 Meta hesabı… Hepsi sıfırdan ürün kuran, maliyeti
+        ölçen aynı üretim alışkanlığının parçaları.
       </p>
       <div className="expertise-grid">
         {expertise.map((item) => (

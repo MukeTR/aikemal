@@ -5,6 +5,11 @@ import { ProjectCard } from "../components/ProjectCard";
 import { HeroVisual } from "../components/home/HeroVisual";
 import { ExpertiseSection } from "../components/home/ExpertiseSection";
 import { ApproachSection } from "../components/home/ApproachSection";
+// Keep the homepage selection independent of catalog ordering.
+const featuredProjects = ["karmatik", "independentai", "workspace-os"].flatMap(
+  (slug) => projects.filter((project) => project.slug === slug),
+);
+
 export function HomePage() {
   return (
     <>
@@ -19,8 +24,9 @@ export function HomePage() {
             benim <span>sağ kolum.</span>
           </h1>
           <p className="hero-description">
-            Ben Kemal. Claude, ChatGPT ve bir dolu aracı elim gibi kullanıyorum.
-            Fikirleri ürüne, dağınık işleri sisteme dönüştürüyorum.
+            Ben Kemal. Ürünleri sıfırdan tek başıma kuruyor; Claude, ChatGPT ve
+            doğru altyapıyı işin ihtiyacına göre kullanıyorum. Fikirleri
+            çalışan, maliyeti akıllı sistemlere dönüştürüyorum.
           </p>
           <div className="hero-actions">
             <Link className="button dark" to="/projects">
@@ -31,8 +37,8 @@ export function HomePage() {
             </Link>
           </div>
           <p className="hero-note">
-            <span className="mini-spark">✳</span> Kahveyi hâlâ ben yapıyorum.
-            Şimdilik.
+            <span className="mini-spark">✳</span> Tek kişilik ekip. Kalabalık
+            bir tool stack.
           </p>
         </div>
         <HeroVisual />
@@ -42,7 +48,7 @@ export function HomePage() {
           <span>AYNI MASADA BULUŞANLAR</span>
           <p>
             Claude & ChatGPT <Asterisk /> CRM & otomasyon <Asterisk /> Ürün &
-            büyüme
+            büyüme <Asterisk /> Maliyet akıllı mimari
           </p>
         </div>
       </div>
@@ -84,17 +90,23 @@ export function HomePage() {
           <p>
             Müşterinin nerede takıldığını da, bir sistemin nasıl kurulacağını da
             merak ediyorum. Claude ve ChatGPT bu merakın günlük çalışma
-            arkadaşları. Fikri konuşuyor, küçük bir sürüm yapıyor, sonra
-            gerçekten işe yarıyor mu diye bakıyoruz.
+            arkadaşları. Ürünleri sıfırdan tek başıma kuruyor; altyapıyı ve
+            modeli de işin yüküne, kalitesine ve maliyetine göre seçiyorum.
           </p>
           <p>
             Burada uzmanlıklarım, GitHub projelerim ve henüz tezgâhtan kalkmamış
             fikirlerim var. İçerisi biraz kalabalık. Kafa da öyle.
           </p>
+          <blockquote className="curiosity-quote">
+            “Bilgi ararken her taşın altına bakmam. Hangi taşı kaldıracağımı
+            bilirim.”
+          </blockquote>
           <div className="tags">
             <span>SaaS & büyüme</span>
             <span>CRM & müşteri yolculuğu</span>
             <span>AI ile üretim</span>
+            <span>Uçtan uca ürün geliştirme</span>
+            <span>Web araştırması & scraping</span>
           </div>
         </div>
       </section>
@@ -104,18 +116,18 @@ export function HomePage() {
           <div className="section-heading">
             <div>
               <p className="eyebrow">03 / KONUŞTUK, SONRA YAPTIK</p>
-              <h2>Repo var. Laf kalabalığı az.</h2>
+              <h2>Fikir çıktı. Ürün oldu.</h2>
             </div>
             <Link className="text-link" to="/projects">
               Atölyenin tamamı <ArrowUpRight size={18} />
             </Link>
           </div>
           <p className="section-intro">
-            GitHub’dan seçilmiş çalışmalar. Her birinin arkasında bir “bunu daha
-            iyi yapamaz mıyız?” sorusu var.
+            Yayındaki araçlar ve GitHub’dan seçilmiş çalışmalar. Her birinin
+            arkasında bir “bunu daha iyi yapamaz mıyız?” sorusu var.
           </p>
           <div className="project-grid">
-            {projects.slice(0, 3).map((p, i) => (
+            {featuredProjects.map((p, i) => (
               <ProjectCard key={p.slug} project={p} index={i} />
             ))}
           </div>

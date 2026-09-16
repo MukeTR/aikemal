@@ -78,12 +78,100 @@ export function AboutPage() {
             dönüştürüyorum. Araçlar elim gibi; neyi neden yapacağımıza karar
             veren hâlâ benim.
           </p>
+          <p>
+            İnternette bilginin nerede saklandığını, hangi kaynağın ne kadar
+            güvenilir olduğunu ve gerektiğinde verinin nasıl düzenli biçimde
+            çıkarılacağını iyi biliyorum. Araştırırken her taşın altına bakan
+            biri değilim; çocukluğumdan beri taşıdığım merak sayesinde hangi
+            taşı kaldırmam gerektiğini bilen biriyim.
+          </p>
           <p className="bio-punchline">
             Kısacası, hem satış hunisine hem hata mesajına bakıyorum. İkisinin
             de bir şey anlatmaya çalıştığına inanıyorum.
           </p>
           <Link className="text-link" to="/expertise">
             Nasıl çalıştığımı keşfet <ArrowUpRight size={17} />
+          </Link>
+        </div>
+      </section>
+      <section
+        className="solo-builder-section"
+        aria-label="Ürün geliştirme yaklaşımı"
+      >
+        <div className="solo-builder-copy">
+          <p className="eyebrow">TEK KİŞİLİK ÜRÜN EKİBİ</p>
+          <h2>
+            Fikirden altyapıya,
+            <br />
+            bütün masalarda ben varım.
+          </h2>
+          <p>
+            Kârmatik, Independent AI, WorkspaceOS ve AccessAI gibi ürünlerde
+            problem seçimini, ürün kurgusunu, arayüzü, geliştirmeyi ve altyapı
+            kararlarını sıfırdan tek başıma üstlendim.
+          </p>
+          <p>
+            Her projeye aynı teknoloji listesini yapıştırmıyorum. Trafiği, veri
+            yapısını, arka plan işlerini ve işletme maliyetini birlikte
+            değerlendiriyorum. Amaç; boşta para yakmayan, bugün yönetilebilir,
+            yarın büyüyebilir bir sistem kurmak.
+          </p>
+          <p className="solo-punchline">
+            Tek kişilik ekipte toplantılar kısa. Backlog yine uzun.
+          </p>
+        </div>
+        <div className="builder-principles">
+          <article>
+            <span>01</span>
+            <h3>İhtiyaca göre altyapı</h3>
+            <p>Stack, projenin gösterişi değil çalışma biçimi.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Düşük sabit maliyet</h3>
+            <p>Kullanılmayan kapasiteye fatura çıkarmayan sistemler.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Modeli işe göre seç</h3>
+            <p>Kalite ve maliyeti ölç; gerekiyorsa modeli değiştir.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Önce çalışan ürün</h3>
+            <p>Kararı gerçek kullanım ve geri bildirimle geliştir.</p>
+          </article>
+          <article>
+            <span>05</span>
+            <h3>Doğru veriyi bul</h3>
+            <p>
+              Kaynağı keşfet, doğrula, yapısını çöz ve kullanılabilir hâle
+              getir.
+            </p>
+          </article>
+          <article>
+            <span>06</span>
+            <h3>Merakı yönteme çevir</h3>
+            <p>Her yere bakmak yerine doğru soruyu doğru kaynağa sor.</p>
+          </article>
+        </div>
+      </section>
+      <section className="current-work" aria-label="Güncel çalışmalar">
+        <div>
+          <p className="eyebrow">ŞU SIRALAR / İŞİN İÇİNDE</p>
+          <h2>
+            8 Meta hesabı.
+            <br />
+            Aktif yönetim.
+          </h2>
+        </div>
+        <div>
+          <p>
+            Şu anda aktif olarak 8 Meta hesabı yönetiyorum. Satış, CRM ve
+            e-ticaret birikimimi günlük reklam yönetimine taşıyorum.
+          </p>
+          <Link className="text-link" to="/expertise#meta">
+            Reklam yönetimi tarafı <ArrowUpRight size={17} />
           </Link>
         </div>
       </section>
@@ -128,15 +216,6 @@ export function AboutPage() {
         </div>
       </section>
       <section className="background-grid">
-        <article>
-          <p className="eyebrow">EĞİTİM</p>
-          <h3>WSB University · Polonya</h3>
-          <p>
-            Computer Science, B.Sc.
-            <br />
-            2021’de başladı · eğitimime ara verdim.
-          </p>
-        </article>
         <article>
           <p className="eyebrow">SERTİFİKALAR</p>
           <h3>Teknik temeller</h3>

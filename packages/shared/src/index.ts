@@ -3,13 +3,18 @@ export type Project = {
   name: string;
   category: string;
   description: string;
-  status: "repository" | "planned";
+  status: "live" | "repository" | "planned";
   tags: string[];
   github?: string;
+  website?: string;
   problem: string;
   approach: string;
   scope: string;
   credit?: string;
+  builderNote?: string;
+  architectureNote?: string;
+  features?: { title: string; description: string; source: string }[];
+  integrations?: string;
 };
 export const projects: Project[] = [
   {
@@ -20,9 +25,9 @@ export const projects: Project[] = [
     tags: ["GEO", "Çoklu model", "TypeScript"],
     github: "https://github.com/MukeTR/independentai",
     description:
-      "Markan yapay zekânın aklına geliyor mu? Gelmiyorsa, bir konuşmamız lazım.",
+      "Markalar için can sıkıcı soru: Yapay zekâ neden beni değil, rakibimi öneriyor?",
     problem:
-      "İnsanlar markaları artık yapay zekâya da soruyor. Bir markanın yanıtlarda geçip geçmediğini ve rakipleriyle birlikte nasıl konumlandığını izlemek gerekiyor.",
+      "Markalar görünürlük için emek harcıyor; ama ChatGPT, Claude veya Gemini’ye sorulduğunda yanıtta yer alıp almadıklarını görmekte zorlanıyor. Independent AI bu görünürlük boşluğuna odaklanıyor.",
     approach:
       "ChatGPT, Claude ve Gemini yanıtlarında marka görünürlüğünü ölçmeye yönelik bir uygulama. Model bağlantıları, marka bahsi çıkarımı ve raporlama aynı ürün akışında buluşuyor.",
     scope:
@@ -78,18 +83,57 @@ export const projects: Project[] = [
   },
   {
     slug: "karmatik",
-    name: "Karmatik",
+    name: "Kârmatik",
     category: "E-TİCARET",
-    status: "planned",
-    tags: ["Kârlılık", "Karar desteği"],
+    status: "live",
+    website: "https://karmatik.io",
+    tags: ["Yayında", "Kârlılık", "Buybox takibi"],
     description:
-      "Ciro egoyu okşar. Kâr faturayı öder. Biz ikincisine bakıyoruz.",
+      "Mağazanın kârı, fiyat rekabeti ve pazarlama kararları aynı panelde. Excel biraz dinlensin.",
     problem:
-      "Komisyon, kargo ve ürün maliyeti hesaba katılmadan görülen satış rakamları tek başına yeterli değil.",
+      "Satış yapmak tek başına yetmiyor. Kesintilerden sonra kalan kârı, rakip fiyatlarını ve hangi ürünün gerçekten kazandırdığını birlikte takip etmek gerekiyor.",
     approach:
-      "E-ticaret kararlarını gerçek kârlılık üzerinden değerlendiren bir araç fikri.",
+      "Pazaryeri ve e-ticaret sitesi verilerini bir araya getirerek kârlılık, hakediş denetimi, fiyat otomasyonu ve kampanya kararlarını aynı iş akışına bağlıyor. Kopilot katmanı mağaza verisini önceliklendirilmiş görevlere dönüştürüyor.",
+    builderNote:
+      "Ürün stratejisinden arayüze, veri akışlarından otomasyonlara kadar Kârmatik’i sıfırdan tek başıma geliştirdim.",
+    architectureNote:
+      "Altyapı ve model kararlarını alışkanlığa göre değil, işin gerçek ihtiyacına göre veriyorum: düşük sabit maliyet, sade işletim ve kullanım arttığında büyüyebilen bir yapı. Yapay zekâ katmanında da kaliteyi korurken model maliyetini düzenli olarak yeniden değerlendiriyorum.",
+    integrations:
+      "Trendyol, Ticimax ve T-Soft, entegrasyon sayfasında bağlı olarak listeleniyor. T-Soft bağlantısında Akakçe rekabet takibi ve belirlenen sınırlar içinde otomatik fiyat güncelleme de bulunuyor.",
+    features: [
+      {
+        title: "Kârlılık & hakediş denetimi",
+        description:
+          "Sipariş ve ürün bazında gider kırılımı, iadelerin etkisi ve beklenen kesintilerle gerçek ödemelerin karşılaştırılması. Çoklu mağaza raporları, PDF ve Excel çıktıları.",
+        source: "https://karmatik.io/cozumler/raporlama",
+      },
+      {
+        title: "Buybox & fiyat otomasyonu",
+        description:
+          "Rakip fiyat, stok ve buybox hareketlerini izleme; satıcının belirlediği kâr ve fiyat sınırlarına göre güncelleme, bildirimler ve işlem kayıtları.",
+        source: "https://karmatik.io/cozumler/buybox",
+      },
+      {
+        title: "Kampanya karar desteği",
+        description:
+          "İndirim ve kuponların kâra etkisini önceden görme; Flaş, Plus ve etiket kampanyalarını değerlendirme. Kampanya Excel dosyasını analiz edip aynı formatta geri alma.",
+        source: "https://karmatik.io/cozumler/pazarlama",
+      },
+      {
+        title: "Marka & rekabet analizi",
+        description:
+          "Ürün satış hızı, tahmini ciro, trend ürünler ve reklam hareketleri. Tahminlerin yanında güven göstergeleriyle rakipleri değerlendirme.",
+        source: "https://karmatik.io/cozumler/marka-takibi",
+      },
+      {
+        title: "Kopilot AI · Alpha",
+        description:
+          "Mağaza verisine dayalı haftalık tarama ve görev önerileri. Fiyat müdahaleleri tanımlı sınırlarla çalışıyor; robot kapalıyken yalnızca öneri sunuyor. Kopilot sayfasına göre Alpha erişimi Enterprise paketine özel.",
+        source: "https://karmatik.io/kopilot",
+      },
+    ],
     scope:
-      "Önceki AI Kemal planından gelen ürün fikri. Bu sitede hesaplama veya mağaza entegrasyonu henüz yok.",
+      "Tamamlanmış ve kullanıma açık bir araç. Kârmatik’i karmatik.io üzerinden inceleyebilir ve kullanmaya başlayabilirsin.",
   },
   {
     slug: "profit-calculator",
@@ -108,3 +152,9 @@ export const projects: Project[] = [
 ];
 export type ChatRequest = { message: string };
 export type ChatResponse = { mode: "mock"; reply: string };
+
+export const projectStatusLabels: Record<Project["status"], string> = {
+  live: "YAYINDA",
+  repository: "GITHUB PROJESİ",
+  planned: "FİKİR AŞAMASINDA",
+};

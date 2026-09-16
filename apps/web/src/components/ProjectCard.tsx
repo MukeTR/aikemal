@@ -9,7 +9,7 @@ import {
   Accessibility,
   Users,
 } from "lucide-react";
-import type { Project } from "@aikemal/shared";
+import { projectStatusLabels, type Project } from "@aikemal/shared";
 const icons = {
   karmatik: BarChart3,
   "profit-calculator": Calculator,
@@ -30,9 +30,7 @@ export function ProjectCard({
     <article className="project-card">
       <div className={"project-art art-" + (index % 3)}>
         <Icon size={56} strokeWidth={1.2} />
-        <span className="soon">
-          {project.status === "repository" ? "GITHUB’DAN" : "FİKİR AŞAMASINDA"}
-        </span>
+        <span className="soon">{projectStatusLabels[project.status]}</span>
         <span className="art-number">0{index + 1}</span>
       </div>
       <div className="project-body">
@@ -49,6 +47,16 @@ export function ProjectCard({
             <span key={t}>{t}</span>
           ))}
         </div>
+        {project.website && (
+          <a
+            className="live-project-link"
+            href={project.website}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Aracı aç <ArrowUpRight size={16} />
+          </a>
+        )}
         <Link className="project-detail-link" to={"/projects/" + project.slug}>
           Hikâyesine bak <span aria-hidden="true">→</span>
         </Link>

@@ -91,13 +91,13 @@ Google Fonts üzerinden Manrope ve DM Sans yüklenir; ağ yoksa yerel sans-serif
 
 ## Kişisel içerik ve portfolio (ikinci sürüm)
 
-- `/about`: CV'den hazırlanan biyografi, kariyer zaman çizelgesi, görev dönemlerine ait sonuçlar, eğitim ve sertifikalar.
-- `/expertise`: Claude, ChatGPT, CRM/otomasyon ve ürün/e-ticaret çalışma alanları; bölüm bağlantıları.
+- `/about`: CV'den hazırlanan biyografi, kariyer zaman çizelgesi, görev dönemlerine ait sonuçlar, sertifikalar ve diller.
+- `/expertise`: Claude, ChatGPT, CRM/otomasyon, Meta reklamları, ürün mimarisi ve web araştırması/veri çıkarımı çalışma alanları; bölüm bağlantıları.
 - `/projects`: URL parametresiyle korunabilen kategori filtreleri.
 - `/projects/:slug`: problem, yaklaşım, kapsam, kaynak repo ve gerektiğinde katkı atfı.
 - Ana sayfa: sarıya yakın vurgu rengi, bölüm navigasyonu, uzmanlık kartları, seçilmiş projeler, açılır çalışma adımları ve yıldızdaki küçük mizahi etkileşim.
 
-İçerik kaynakları: kullanıcının sağladığı CV ve 17 Eylül 2026 tarihinde incelenen GitHub repo/README'leri. Kariyer verileri `apps/web/src/content/profile.ts`, uzmanlık metinleri `apps/web/src/content/expertise.ts`, proje kataloğu `packages/shared/src/index.ts` içinde tutulur. CV'nin kendisi, telefon ve e-posta repo/public dizinine eklenmedi. Eğitim ara verilmiş olarak, başarı oranları CV'deki görev bağlamıyla aktarıldı; güncel görev durumları CV'yi yansıtır.
+İçerik kaynakları: kullanıcının sağladığı CV ve 17 Eylül 2026 tarihinde incelenen GitHub repo/README'leri. Kariyer verileri `apps/web/src/content/profile.ts`, uzmanlık metinleri `apps/web/src/content/expertise.ts`, proje kataloğu `packages/shared/src/index.ts` içinde tutulur. CV'nin kendisi, telefon ve e-posta repo/public dizinine eklenmedi. Eğitim bilgileri kullanıcının tercihiyle sitede yer almıyor. Başarı oranları CV'deki görev bağlamıyla aktarıldı; güncel görev durumları CV'yi yansıtır.
 
 GitHub kaynakları:
 
@@ -106,4 +106,4 @@ GitHub kaynakları:
 - [AccessAI / reachableai](https://github.com/MukeTR/reachableai/blob/main/README.md)
 - [Instagram Unfollowers](https://github.com/MukeTR/InstagramUnfollowers/blob/main/README.md): upstream üzerine geliştirilmiş Dipixel arayüzü/tasarımı/Türkçe sürümü; orijinal araç sahipliği iddia edilmez.
 
-Karmatik ve Kâr Hesaplayıcı önceki plandaki fikirlerdir. Boş `crm` reposu bir tamamlanmış ürün olarak sunulmadı. Dayflow bir fork olduğu için özgün proje vitrinine alınmadı. GitHub verisi build-time yerel içeriktir; ziyaretçi başına GitHub çağrısı veya token gerektirmez. Eski `/projects` placeholder vitrini bu katalogla değiştirilmiştir.
+Kârmatik, kullanıcının güncellemesi ve https://karmatik.io incelemesi doğrultusunda yayında olarak listelenir; ana sayfada yer alır. Kâr Hesaplayıcı ayrı bir planlanan araçtır ve ana sayfada gösterilmez. Aktif yönetilen 8 Meta hesabı, özgün ürünlerin tek başına sıfırdan geliştirildiği, altyapı/model kararlarının maliyet ve çıktı dengesine göre verildiği ve web araştırması/scraping yetkinliği bilgileri kullanıcı beyanıyla kişisel anlatıya eklendi. Instagram Unfollowers için upstream atfı korunur. Boş `crm` reposu bir tamamlanmış ürün olarak sunulmadı. Dayflow bir fork olduğu için özgün proje vitrinine alınmadı. GitHub verisi build-time yerel içeriktir; ziyaretçi başına GitHub çağrısı veya token gerektirmez. Eski `/projects` placeholder vitrini bu katalogla değiştirilmiştir.
