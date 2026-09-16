@@ -114,6 +114,32 @@ const pageMeta: Record<string, PageMeta> = {
     description: "Yerel proje vitrini yönetimi.",
     noindex: true,
   },
+  "/en": {
+    title: "AI Kemal — From curious question to working product",
+    description:
+      "Mustafa Kemal Karataş builds AI products, SaaS systems and growth operations across e-commerce, CRM, research and automation.",
+    schema: [
+      {
+        "@type": "WebPage",
+        name: "AI Kemal — English",
+        url: `${origin}/en`,
+        inLanguage: "en",
+        about: { "@id": `${origin}/#mustafa-kemal-karatas` },
+      },
+      personSchema,
+    ],
+  },
+  "/en/ask": {
+    title: "Think together — AI Kemal",
+    description:
+      "Turn an AI, product, growth, automation or research problem into a short and useful brief.",
+    schema: {
+      "@type": "ContactPage",
+      name: "Think together with AI Kemal",
+      url: `${origin}/en/ask`,
+      inLanguage: "en",
+    },
+  },
 };
 
 function setMeta(selector: string, attribute: string, value: string) {
@@ -189,6 +215,11 @@ export function Seo() {
       resolved.type ?? "website",
     );
     setMeta('meta[property="og:url"]', "property:og:url", canonicalUrl);
+    setMeta(
+      'meta[property="og:locale"]',
+      "property:og:locale",
+      pathname.startsWith("/en") ? "en_US" : "tr_TR",
+    );
     setMeta('meta[property="og:image"]', "property:og:image", defaultImage);
     setMeta('meta[name="twitter:title"]', "name:twitter:title", resolved.title);
     setMeta(
@@ -206,6 +237,13 @@ export function Seo() {
       document.head.appendChild(canonical);
     }
     canonical.href = canonicalUrl;
+
+    const llmsLink = document.head.querySelector<HTMLLinkElement>(
+      'link[rel="describedby"]',
+    );
+    if (llmsLink) {
+      llmsLink.href = pathname.startsWith("/en") ? "/llms-en.txt" : "/llms.txt";
+    }
 
     document.getElementById("route-json-ld")?.remove();
     if (resolved.schema) {

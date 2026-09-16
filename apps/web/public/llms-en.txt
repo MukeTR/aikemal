@@ -1,0 +1,39 @@
+# AI Kemal — English
+
+> AI Kemal is the digital workshop of Mustafa Kemal Karataş: founder, AI product builder and the person who tends to turn “what if?” into a working repository.
+
+Mustafa Kemal is the founder and solopreneur builder of Kârmatik and Independent AI, and co-founder of Dipixel Media. He works across AI, SaaS, e-commerce, CRM, automation, competitive strategy, web research, data extraction and Meta advertising. Infrastructure and model choices are made around the real traffic, data, operating and cost constraints of each product.
+
+## Main pages
+
+- [English home](https://aikemal.com/en): English profile, expertise, selected ventures, working principles and technical repair animation.
+- [Think together](https://aikemal.com/en/ask): A short English diagnostic form for product, growth, automation, AI and research problems.
+- [Turkish home](https://aikemal.com/): The complete Turkish edition.
+- [Projects](https://aikemal.com/projects): The detailed project catalogue in Turkish.
+- [Expertise](https://aikemal.com/expertise): The detailed expertise catalogue in Turkish.
+
+## Selected ventures
+
+- [Kârmatik](https://aikemal.com/projects/karmatik): Live e-commerce software for profitability, settlement checks, buybox monitoring, pricing automation, campaign decisions and competitive analysis.
+- [Independent AI](https://aikemal.com/projects/independentai): A product being built to measure brand visibility across answers from ChatGPT, Claude and Gemini.
+- [Dipixel Media](https://aikemal.com/projects/dipixel-media): Growth and performance work across an ecosystem of 24 brands, including 8 actively managed Meta accounts.
+- [WorkspaceOS](https://aikemal.com/projects/workspace-os): A native macOS workspace and storage tool with on-device OCR and an optional Claude interpreter.
+- [AccessAI](https://aikemal.com/projects/accessai): Web accessibility scanning with rule-based checks and AI-supported recommendations.
+
+## Working style
+
+- AI is a working habit, not a decorative slide.
+- Find the real competitor before writing the strategy.
+- Find the right source before collecting the data.
+- Choose infrastructure for the product, not for fashion.
+- Keep fixed cost low and the working output high.
+- Listen closely: good products often begin as one sentence someone actually heard.
+- “Impossible” is often a problem that has not been broken into small enough pieces.
+
+## Sources and attribution
+
+- [GitHub — MukeTR](https://github.com/MukeTR): Public repositories and product work.
+- [Kârmatik](https://karmatik.io): The live Kârmatik product.
+- [Full context in Turkish](https://aikemal.com/llms-full.txt): Detailed identity, expertise, projects, experience and accuracy notes.
+
+Education is intentionally omitted from the public profile. Private phone and email details are not published. Planned features must not be described as completed. Kârmatik and Independent AI are solopreneur products; Dipixel Media is a co-founder role.

@@ -5,6 +5,7 @@ import { ScrollEffects } from "./ScrollEffects";
 import { Seo } from "./Seo";
 export function Layout() {
   const { pathname, hash } = useLocation();
+  const isEnglish = pathname.startsWith("/en");
   const routeName =
     pathname === "/"
       ? "home"
@@ -12,9 +13,10 @@ export function Layout() {
         ? "project-detail"
         : pathname.slice(1).replaceAll("/", "-") || "home";
   useEffect(() => {
+    document.documentElement.lang = isEnglish ? "en" : "tr";
     if (hash) document.getElementById(hash.slice(1))?.scrollIntoView();
     else window.scrollTo(0, 0);
-  }, [pathname, hash]);
+  }, [pathname, hash, isEnglish]);
   return (
     <>
       <Seo />
@@ -23,18 +25,38 @@ export function Layout() {
         İçeriğe geç
       </a>
       <header className="header container">
-        <Link to="/" className="brand" aria-label="AI Kemal ana sayfa">
+        <Link
+          to={isEnglish ? "/en" : "/"}
+          className="brand"
+          aria-label={isEnglish ? "AI Kemal home" : "AI Kemal ana sayfa"}
+        >
           <span className="brand-mark">
             <Asterisk size={25} />
           </span>{" "}
           ai kemal<span className="brand-dot">.</span>
         </Link>
-        <nav aria-label="Ana menü">
-          <NavLink to="/about">Kemal kim?</NavLink>
-          <NavLink to="/expertise">Uzmanlıklar</NavLink>
-          <NavLink to="/projects">Projeler & araçlar</NavLink>
-          <Link className="nav-cta" to="/ask">
-            Birlikte düşünelim <ArrowUpRight size={16} />
+        <nav aria-label={isEnglish ? "Main navigation" : "Ana menü"}>
+          {isEnglish ? (
+            <>
+              <a href="#about">About</a>
+              <a href="#expertise">Expertise</a>
+              <a href="#work">Work</a>
+              <Link className="nav-cta" to="/en/ask">
+                Think together <ArrowUpRight size={16} />
+              </Link>
+            </>
+          ) : (
+            <>
+              <NavLink to="/about">Kemal kim?</NavLink>
+              <NavLink to="/expertise">Uzmanlıklar</NavLink>
+              <NavLink to="/projects">Projeler & araçlar</NavLink>
+              <Link className="nav-cta" to="/ask">
+                Birlikte düşünelim <ArrowUpRight size={16} />
+              </Link>
+            </>
+          )}
+          <Link className="language-switch" to={isEnglish ? "/" : "/en"}>
+            {isEnglish ? "TR" : "EN"}
           </Link>
         </nav>
       </header>
@@ -44,17 +66,24 @@ export function Layout() {
         </div>
       </main>
       <footer className="container footer">
-        <Link className="brand" to="/">
+        <Link className="brand" to={isEnglish ? "/en" : "/"}>
           ai kemal.
         </Link>
-        <p>Ciddiyet işte. Mizah her yerde.</p>
+        <p>
+          {isEnglish
+            ? "Serious work. Humour everywhere."
+            : "Ciddiyet işte. Mizah her yerde."}
+        </p>
         <a href="https://github.com/MukeTR" target="_blank" rel="noreferrer">
           GitHub ↗
         </a>
-        <Link to="/admin">Yönetim</Link>
+        {!isEnglish && <Link to="/admin">Yönetim</Link>}
         <span>© {new Date().getFullYear()} AI Kemal</span>
-        <a href="#main" aria-label="Sayfanın başına dön">
-          Yukarı ↑
+        <a
+          href="#main"
+          aria-label={isEnglish ? "Back to top" : "Sayfanın başına dön"}
+        >
+          {isEnglish ? "Up ↑" : "Yukarı ↑"}
         </a>
       </footer>
     </>

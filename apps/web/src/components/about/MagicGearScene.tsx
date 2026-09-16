@@ -50,20 +50,25 @@ function Gear({ cx, cy, radius, teeth, className, code, label }: GearProps) {
   );
 }
 
-export function MagicGearScene() {
+export function MagicGearScene({ locale = "tr" }: { locale?: "tr" | "en" }) {
+  const english = locale === "en";
   return (
     <section className="magic-gear-scene" aria-labelledby="gear-scene-title">
       <div className="magic-gear-copy">
-        <p className="eyebrow">BENİM SİHRİM / SİSTEM MÜDAHALESİ</p>
+        <p className="eyebrow">
+          {english
+            ? "THE MAGIC / SYSTEM INTERVENTION"
+            : "BENİM SİHRİM / SİSTEM MÜDAHALESİ"}
+        </p>
         <h2 id="gear-scene-title">
-          Akış tıkanır.
+          {english ? "The flow jams." : "Akış tıkanır."}
           <br />
-          Ben sebebini bulurum.
+          {english ? "I find the reason." : "Ben sebebini bulurum."}
         </h2>
         <p>
-          Sorun bazen stratejide, bazen veride, bazen de iki sistemin temas
-          noktasındadır. Sinyali izler, darboğazı teşhis eder ve akışı yeniden
-          çalıştırırım.
+          {english
+            ? "Sometimes the fault is in the strategy, sometimes in the data, and sometimes where two systems meet. I trace the signal, diagnose the bottleneck and get the flow running again."
+            : "Sorun bazen stratejide, bazen veride, bazen de iki sistemin temas noktasındadır. Sinyali izler, darboğazı teşhis eder ve akışı yeniden çalıştırırım."}
         </p>
         <span className="gear-scene-note">DIAGNOSE → PATCH → VERIFY → RUN</span>
       </div>

@@ -11,6 +11,7 @@ Mustafa Kemal Karataş; Kârmatik ve Independent AI'ın kurucusu ve solopreneur 
 - [Uzmanlıklar](https://aikemal.com/expertise): Yapay zekâ, CRM, ürün, e-ticaret, Meta, araştırma, mimari ve rakip analizi.
 - [Projeler ve araçlar](https://aikemal.com/projects): Ürün ve açık repo kataloğu.
 - [Birlikte düşünelim](https://aikemal.com/ask): Bir problemi kısa ve yapılandırılmış bir briefe dönüştüren form.
+- [English edition](https://aikemal.com/en): AI Kemal'in aynı kişilik ve mizahla yeniden yazılmış İngilizce sürümü.
 
 ## Seçilmiş işler
 

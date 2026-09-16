@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://aikemal.com/</loc><lastmod>2026-09-17</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://aikemal.com/</loc><xhtml:link rel="alternate" hreflang="tr" href="https://aikemal.com/"/><xhtml:link rel="alternate" hreflang="en" href="https://aikemal.com/en"/><lastmod>2026-09-17</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
   <url><loc>https://aikemal.com/about</loc><lastmod>2026-09-17</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://aikemal.com/expertise</loc><lastmod>2026-09-17</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://aikemal.com/projects</loc><lastmod>2026-09-17</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://aikemal.com/ask</loc><lastmod>2026-09-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aikemal.com/ask</loc><xhtml:link rel="alternate" hreflang="tr" href="https://aikemal.com/ask"/><xhtml:link rel="alternate" hreflang="en" href="https://aikemal.com/en/ask"/><lastmod>2026-09-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aikemal.com/en</loc><xhtml:link rel="alternate" hreflang="en" href="https://aikemal.com/en"/><xhtml:link rel="alternate" hreflang="tr" href="https://aikemal.com/"/><lastmod>2026-09-17</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://aikemal.com/en/ask</loc><xhtml:link rel="alternate" hreflang="en" href="https://aikemal.com/en/ask"/><xhtml:link rel="alternate" hreflang="tr" href="https://aikemal.com/ask"/><lastmod>2026-09-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://aikemal.com/projects/karmatik</loc><lastmod>2026-09-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aikemal.com/projects/independentai</loc><lastmod>2026-09-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aikemal.com/projects/dipixel-media</loc><lastmod>2026-09-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>

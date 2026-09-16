@@ -62,6 +62,23 @@ const pageGroups: Record<string, RevealGroup[]> = {
     [".admin-form", ["document-rise"]],
     [".admin-project-list", ["document-rise"]],
   ],
+  en: [
+    [".english-about > *", ["slide-left", "slide-right"]],
+    [".english-field-note > *", ["counter-pop", "counter-pop", "slide-right"]],
+    [
+      ".english-skill-grid article",
+      ["tilt-left", "scale", "tilt-right", "rise"],
+    ],
+    [
+      ".english-venture-grid article",
+      ["catalog-left", "catalog-up", "catalog-right"],
+    ],
+    [".magic-gear-scene > *", ["slide-left", "liquid-scale"]],
+    [".english-manifesto > *", ["counter-pop", "text-unfold", "slide-right"]],
+    [".english-cta > *", ["slide-left", "slide-right"]],
+    [".english-brief-heading > *", ["form-left", "form-right"]],
+    [".english-brief-form", ["form-rise"]],
+  ],
 };
 
 const fallbackGroups: RevealGroup[] = [
