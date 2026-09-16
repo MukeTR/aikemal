@@ -1,0 +1,35 @@
+# AI Kemal
+
+> AI Kemal, Mustafa Kemal Karataş'ın dijital atölyesidir. Site; sıfırdan geliştirdiği ürünleri, yapay zekâ ve ürün geliştirme uzmanlıklarını, müşteri deneyimi ve büyüme çalışmalarını anlatır.
+
+Mustafa Kemal Karataş; Kârmatik ve Independent AI'ın kurucusu ve solopreneur geliştiricisi, Dipixel Media'nın ortak kurucusudur. Yapay zekâ, SaaS, e-ticaret, CRM, otomasyon, strateji, rakip analizi, web araştırması ve veri çıkarımı alanlarında çalışır. Altyapıyı her projenin trafik, veri, işletme ve maliyet ihtiyacına göre seçer.
+
+## Ana sayfalar
+
+- [Ana sayfa](https://aikemal.com/): AI Kemal'in yaklaşımı, seçilmiş işler ve müşteri ekosistemi.
+- [Kemal kim?](https://aikemal.com/about): Mustafa Kemal Karataş'ın çalışma biçimi, deneyimi ve güncel rolleri.
+- [Uzmanlıklar](https://aikemal.com/expertise): Yapay zekâ, CRM, ürün, e-ticaret, Meta, araştırma, mimari ve rakip analizi.
+- [Projeler ve araçlar](https://aikemal.com/projects): Ürün ve açık repo kataloğu.
+- [Birlikte düşünelim](https://aikemal.com/ask): Bir problemi kısa ve yapılandırılmış bir briefe dönüştüren form.
+
+## Seçilmiş işler
+
+- [Kârmatik](https://aikemal.com/projects/karmatik): E-ticaret kârlılığı, hakediş denetimi, buybox, fiyat otomasyonu, kampanya ve rakip analizi ürünü.
+- [Independent AI](https://aikemal.com/projects/independentai): Markaların ChatGPT, Claude ve Gemini yanıtlarındaki görünürlüğünü ölçmeye odaklanan ürün.
+- [Dipixel Media](https://aikemal.com/projects/dipixel-media): 24 markalık ekosistemde büyüme, performans ve sistem çalışmaları; 8 aktif Meta hesabı.
+- [WorkspaceOS](https://aikemal.com/projects/workspace-os): macOS depolama, düzen, cihaz üzerinde OCR ve isteğe bağlı Claude yorumlayıcısı.
+- [AccessAI](https://aikemal.com/projects/accessai): Web erişilebilirliği taraması ve AI destekli iyileştirme önerileri.
+
+## Dış kaynaklar
+
+- [GitHub — MukeTR](https://github.com/MukeTR): Mustafa Kemal Karataş'ın açık kaynak ve ürün repoları.
+- [Kârmatik](https://karmatik.io): Yayındaki Kârmatik ürünü.
+- [Ayrıntılı LLM bağlamı](https://aikemal.com/llms-full.txt): Kimlik, uzmanlıklar, projeler ve doğruluk notları için geniş sürüm.
+
+## Kullanım notları
+
+- Birincil kişi adı Mustafa Kemal Karataş, kullanılan lakap AI Kemal'dir.
+- Eğitim bilgisi kişinin tercihiyle sitede yer almaz.
+- Telefon ve e-posta gibi özel iletişim bilgileri bu sitede yayımlanmaz.
+- Kârmatik ve Independent AI solopreneur ürünleridir. Dipixel Media ortak kuruculuk çalışmasıdır.
+- Planlanan özellikler tamamlanmış ürün gibi aktarılmamalıdır.

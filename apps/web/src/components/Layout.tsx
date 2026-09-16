@@ -2,6 +2,7 @@ import { Link, NavLink, Outlet, useLocation } from "react-router-dom";
 import { ArrowUpRight, Asterisk } from "lucide-react";
 import { useEffect } from "react";
 import { ScrollEffects } from "./ScrollEffects";
+import { Seo } from "./Seo";
 export function Layout() {
   const { pathname, hash } = useLocation();
   const routeName =
@@ -16,6 +17,7 @@ export function Layout() {
   }, [pathname, hash]);
   return (
     <>
+      <Seo />
       <ScrollEffects routeKey={pathname} />
       <a className="skip-link" href="#main">
         İçeriğe geç

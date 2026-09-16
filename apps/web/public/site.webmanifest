@@ -1,0 +1,18 @@
+{
+  "name": "AI Kemal — Mustafa Kemal Karataş",
+  "short_name": "AI Kemal",
+  "description": "Fikirden çalışan ürüne: Mustafa Kemal Karataş'ın dijital atölyesi.",
+  "lang": "tr-TR",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8f7f0",
+  "theme_color": "#f3e55f",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

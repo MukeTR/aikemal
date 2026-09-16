@@ -1,0 +1,10 @@
+/* TEAM */
+Founder & builder: Mustafa Kemal Karataş
+Site: https://aikemal.com
+GitHub: https://github.com/MukeTR
+Location: İstanbul, Türkiye
+
+/* SITE */
+Language: Turkish
+Stack: React, TypeScript, Vite, Cloudflare Workers, Supabase-ready
+Last update: 2026-09-17
