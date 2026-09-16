@@ -1,6 +1,7 @@
 import { Link, NavLink, Outlet, useLocation } from "react-router-dom";
 import { ArrowUpRight, Asterisk } from "lucide-react";
 import { useEffect } from "react";
+import { ScrollEffects } from "./ScrollEffects";
 export function Layout() {
   const { pathname, hash } = useLocation();
   useEffect(() => {
@@ -9,6 +10,7 @@ export function Layout() {
   }, [pathname, hash]);
   return (
     <>
+      <ScrollEffects routeKey={pathname} />
       <a className="skip-link" href="#main">
         İçeriğe geç
       </a>
@@ -29,7 +31,9 @@ export function Layout() {
         </nav>
       </header>
       <main id="main" tabIndex={-1}>
-        <Outlet />
+        <div className="route-stage" key={pathname}>
+          <Outlet />
+        </div>
       </main>
       <footer className="container footer">
         <Link className="brand" to="/">
