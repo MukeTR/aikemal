@@ -37,8 +37,8 @@ export function AboutPage() {
         </div>
         <aside className="human-card liquid-portrait">
           <img
-            src="/images/kemal-eyes-lockscreen.webp"
-            alt="Suluboya gözlerden oluşan telefon ekranı"
+            src="/images/ai-kemal-watercolor-eyes.webp"
+            alt="Merak ve empatiyi anlatan özgün suluboya göz kolajı"
           />
           <div className="liquid-top-label">
             <Asterisk size={18} strokeWidth={1.5} />
