@@ -42,7 +42,7 @@ export const expertise = [
     label: "İŞİN ARKA PLANI",
     line: "Müşteri takibi hafızaya kalmasın.",
     description:
-      "Melontik’te CRM altyapısı, segmentasyon ve lead scoring; Roketfy’de müşteri başarısı ve onboarding üzerinde çalıştım. HubSpot, e-posta, WhatsApp ve CRM akışlarını müşteri yolculuğuyla birlikte düşünüyorum.",
+      "Melontik’te CRM altyapısı, segmentasyon ve lead scoring; Roketfy’de müşteri başarısı ve onboarding üzerinde çalıştım. HubSpot’un satış, pazarlama, servis, otomasyon ve raporlama araçlarını; e-posta, WhatsApp ve CRM akışlarıyla birlikte müşteri yolculuğunun parçası olarak kullanıyorum.",
     tasks: [
       "Talep, görüşme ve sonraki adımı aynı akışta düşünmek",
       "Tekrar eden işleri ve insan kararı gereken noktaları ayırmak",
@@ -122,5 +122,23 @@ export const expertise = [
       "Pazar, rakip veya ürün verisi gerektiğinde önce en güvenilir kaynağı buluyor; sonra uygun yöntemle tekrarlanabilir bir veri akışı kuruyorum.",
     aside:
       "İnsanlar bilgi için her taşın altına bakar. Ben hangi taşı kaldıracağımı bilirim.",
+  },
+  {
+    id: "strategy",
+    number: "08",
+    name: "Strateji & rakip analizi",
+    label: "ÖNCE OYUN ALANINI OKUMAK",
+    line: "Rakibin kim olduğunu doğru bulmadan strateji başlamaz.",
+    description:
+      "Bir pazara veya probleme girerken yalnızca görünen markalara bakmıyorum. Gerçek rakibi; müşterinin alternatifleri, fiyatlama, ürün deneyimi, trafik kaynakları, iletişim dili ve operasyon biçimi üzerinden tespit edip inceliyorum.",
+    tasks: [
+      "Doğrudan ve dolaylı rakipleri doğru ölçütlerle ayırmak",
+      "Ürün, teklif, fiyat, kanal ve müşteri deneyimini birlikte incelemek",
+      "Rakibin kopyasını değil, pazardaki açık alanı ortaya çıkarmak",
+    ],
+    example:
+      "Kârmatik’te buybox ve fiyat rekabeti, Independent AI’da model yanıtlarındaki marka görünürlüğü: strateji benim için ölçülebilir rakip sinyaliyle başlıyor.",
+    project: "/projects/karmatik",
+    aside: "Rakibi yanlış seçersen çok güzel bir planla yanlış yere gidersin.",
   },
 ];

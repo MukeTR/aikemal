@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { ArrowUpRight, Asterisk, MapPin, Code2 } from "lucide-react";
 import { experience, outcomes } from "../content/profile";
+import { MagicGearScene } from "../components/about/MagicGearScene";
 export function AboutPage() {
   return (
     <div className="container page about-page">
@@ -115,15 +116,44 @@ export function AboutPage() {
             biri değilim; çocukluğumdan beri taşıdığım merak sayesinde hangi
             taşı kaldırmam gerektiğini bilen biriyim.
           </p>
+          <p>
+            Strateji kurarken önce oyun alanını doğru okurum. Rakibin kim
+            olduğunu varsaymak yerine; ürününü, teklifini, fiyatını,
+            kanallarını, müşteri deneyimini ve insanların onun yerine hangi
+            alternatifi seçtiğini incelerim. Çünkü yanlış rakibe karşı
+            hazırlanmış kusursuz plan da yanlış plandır.
+          </p>
+          <p>
+            Araç öğrenmek benim için ayrı bir iş değil, üretmenin doğal parçası.
+            Adobe ailesi ve Microsoft Office araçlarında ileri seviyedeyim;
+            HubSpot’un bütün çalışma alanlarına hâkimim. Müzikle uğraştığım
+            yıllarda FL Studio’yu, görsel üretimde DaVinci Resolve ve Sony
+            Vegas’ı öğrendim. Kısacası, içinde pil olan bir şeyle büyük
+            ihtimalle çalışmışımdır.
+          </p>
           <p className="bio-punchline">
-            Kısacası, hem satış hunisine hem hata mesajına bakıyorum. İkisinin
-            de bir şey anlatmaya çalıştığına inanıyorum.
+            Kısacası; müşteriyi, rakibi, veriyi ve sistemi aynı masada okuyorum.
+            Çünkü hepsi, işin nerede tıkandığını kendi dilinde söylüyor.
           </p>
           <Link className="text-link" to="/expertise">
             Nasıl çalıştığımı keşfet <ArrowUpRight size={17} />
           </Link>
         </div>
       </section>
+      <aside className="impossible-manifesto">
+        <p className="eyebrow">BİR DEĞİŞMEYEN / ÇALIŞMA İNADI</p>
+        <blockquote>
+          “SpaceX’i yapan da insan.
+          <br />
+          Ben de insanım. Neden yapamayayım?”
+        </blockquote>
+        <p>
+          Benim gözümde “imkânsız”, çoğu zaman henüz yeterince parçalanmamış bir
+          problemdir. Önce nasıl yapılacağını bulur, sonra maliyetini ve en
+          doğru yolunu çözerim.
+        </p>
+      </aside>
+      <MagicGearScene />
       <section
         className="solo-builder-section"
         aria-label="Ürün geliştirme yaklaşımı"
@@ -278,8 +308,21 @@ export function AboutPage() {
             İngilizce · üst orta seviye
           </p>
           <p>
-            HubSpot, CRM sistemleri, Shopify, API entegrasyonları, KPI raporlama
-            ve yaşam döngüsü pazarlaması.
+            HubSpot’un satış, pazarlama, servis, otomasyon ve raporlama
+            araçları; CRM sistemleri, Shopify, API entegrasyonları, KPI
+            raporlama ve yaşam döngüsü pazarlaması.
+          </p>
+        </article>
+        <article>
+          <p className="eyebrow">ÜRETİM ARAÇLARI</p>
+          <h3>Dosya türü fark etmez</h3>
+          <p>
+            Adobe Creative Cloud · Microsoft Office · FL Studio · DaVinci
+            Resolve · Sony Vegas
+          </p>
+          <p>
+            Tasarım, ses, video, sunum, veri veya operasyon: araç değişir;
+            öğrenme refleksi değişmez.
           </p>
         </article>
       </section>

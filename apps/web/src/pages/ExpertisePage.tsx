@@ -11,9 +11,9 @@ export function ExpertisePage() {
         <span>el alışkanlığım.</span>
       </h1>
       <p className="page-intro">
-        Claude ve ChatGPT’yi düşünürken, üretirken ve geliştirirken
-        kullanıyorum. CRM, otomasyon ve dijital ürünlerle birleştirince asıl iş
-        ortaya çıkıyor. Son karar ve kontrol bende.
+        Rakibi doğru tespit etmekten çalışan ürünü kurmaya kadar stratejiyle
+        üretimi aynı masada tutuyorum. Yapay zekâ, CRM, otomasyon ve yaratıcı
+        üretim araçları bu sistemin parçaları. Son karar ve kontrol bende.
       </p>
       <nav className="expertise-jumps" aria-label="Uzmanlık alanları">
         {expertise.map((e) => (
