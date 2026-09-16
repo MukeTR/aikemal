@@ -19,24 +19,25 @@ export function HomePage() {
       <section className="hero container">
         <div className="hero-copy">
           <p className="eyebrow">
-            <span className="live-dot" /> İNSAN MERAKI × YAPAY ZEKÂ
+            <span className="live-dot" /> MERAK × VERİ × ÇALIŞAN ÜRÜN
           </p>
           <h1>
-            Yapay zekâ
+            Merak ederim.
             <br />
-            benim <span>sağ kolum.</span>
+            Veriyi bulurum.
+            <br />
+            <span>Bir şey kurarım.</span>
           </h1>
           <p className="hero-description">
-            Ben Kemal. Ürünleri sıfırdan tek başıma kuruyor; Claude, ChatGPT ve
-            doğru altyapıyı işin ihtiyacına göre kullanıyorum. Fikirleri
-            çalışan, maliyeti akıllı sistemlere dönüştürüyorum.
+            Genellikle çalışır. Çalışmıyorsa nedenini de bulurum. Araştırmadan
+            veriye, altyapıdan yayına kadar ürünün bütün masalarında ben varım.
           </p>
           <div className="hero-actions">
             <Link className="button dark" to="/projects">
-              Neler üretiyorum? <ArrowUpRight size={19} />
+              Yaptıklarıma bak <ArrowUpRight size={19} />
             </Link>
             <Link className="text-link" to="/ask">
-              Birlikte düşünelim <ArrowUpRight size={17} />
+              Bir problem getir <ArrowUpRight size={17} />
             </Link>
           </div>
           <p className="hero-note">

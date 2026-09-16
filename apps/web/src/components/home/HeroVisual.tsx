@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Asterisk, Sparkles, Terminal, Workflow } from "lucide-react";
+import { Asterisk, Search, Terminal, Workflow } from "lucide-react";
 const notes = [
-  "Kahve: manuel. Geri kalanı konuşulur.",
+  "Doğru taşı buldum. Şimdi bir kaldıralım.",
   "Yeni fikir algılandı. Yine mi Kemal?",
   "17 sekme açık. Hepsinin bir sebebi var.",
   "Bir küçük özellik daha… Meşhur son sözler.",
@@ -17,13 +17,13 @@ export function HeroVisual() {
       <div className="orbit orbit-one" />
       <div className="orbit orbit-two" />
       <div className="float-chip chip-ai">
-        <Sparkles size={16} /> Claude + ChatGPT
+        <Search size={16} /> Veriyi bul
       </div>
       <div className="float-chip chip-code">
-        <Terminal size={16} /> Fikir → ürün
+        <Terminal size={16} /> Problem → ürün
       </div>
       <div className="float-chip chip-growth">
-        <Workflow size={16} /> CRM + otomasyon
+        <Workflow size={16} /> Doğru altyapı
       </div>
       <button
         className="core"
