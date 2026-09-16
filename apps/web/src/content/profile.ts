@@ -25,7 +25,7 @@ export const experience = [
   {
     company: "Melontik",
     role: "Sales & CRM Manager",
-    period: "2025 — devam ediyor",
+    period: "2025 — Haziran 2026",
     text: "Satış büyümesini destekleyen CRM altyapısı, segmentasyon ve lead scoring modelleri. Lead’den aktivasyon, dönüşüm ve elde tutmaya uzanan satış akışları; e-posta, WhatsApp ve CRM otomasyonları.",
     tags: ["CRM altyapısı", "Lead scoring", "A/B testleri"],
   },
