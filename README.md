@@ -95,6 +95,7 @@ Google Fonts üzerinden Manrope ve DM Sans yüklenir; ağ yoksa yerel sans-serif
 - `/expertise`: Claude, ChatGPT, CRM/otomasyon, Meta reklamları, ürün mimarisi ve web araştırması/veri çıkarımı çalışma alanları; bölüm bağlantıları.
 - `/projects`: URL parametresiyle korunabilen kategori filtreleri, seçili proje vitrini ve public/özel çalışmaları ayıran çözüm arşivi.
 - `/projects/:slug`: problem, yaklaşım, kapsam, kaynak repo ve gerektiğinde katkı atfı.
+- `/admin`: proje ekleme, düzenleme, vitrinden kaldırma ve geri yükleme paneli. Bu ilk lokal sürüm değişiklikleri tarayıcının `localStorage` alanında saklar; Supabase Auth/veritabanı bağlandığında aynı veri katmanı kalıcı yönetime taşınacaktır.
 - Ana sayfa: sarıya yakın vurgu rengi, bölüm navigasyonu, uzmanlık kartları, seçilmiş projeler, açılır çalışma adımları ve yıldızdaki küçük mizahi etkileşim.
 
 İçerik kaynakları: kullanıcının sağladığı CV, güncel LinkedIn deneyim ekran görüntüsü ve 17 Eylül 2026 tarihinde incelenen GitHub repo/README'leri. Kariyer verileri `apps/web/src/content/profile.ts`, uzmanlık metinleri `apps/web/src/content/expertise.ts`, proje kataloğu `packages/shared/src/index.ts` içinde tutulur. CV'nin ve ekran görüntüsünün kendisi, telefon ve e-posta repo/public dizinine eklenmedi. Eğitim bilgileri kullanıcının tercihiyle sitede yer almıyor. Başarı oranları CV'deki görev bağlamıyla aktarıldı. Kârmatik, Dipixel Media ve Independent AI rolleri kullanıcının paylaştığı güncel deneyim bilgilerini yansıtır.

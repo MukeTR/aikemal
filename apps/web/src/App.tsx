@@ -6,6 +6,7 @@ import { ProjectsPage } from "./pages/ProjectsPage";
 import { ExpertisePage } from "./pages/ExpertisePage";
 import { ProjectDetailPage } from "./pages/ProjectDetailPage";
 import { AboutPage } from "./pages/AboutPage";
+import { AdminProjectsPage } from "./pages/AdminProjectsPage";
 export function App() {
   return (
     <Routes>
@@ -16,6 +17,7 @@ export function App() {
         <Route path="projects/:slug" element={<ProjectDetailPage />} />
         <Route path="expertise" element={<ExpertisePage />} />
         <Route path="about" element={<AboutPage />} />
+        <Route path="admin" element={<AdminProjectsPage />} />
         <Route
           path="*"
           element={

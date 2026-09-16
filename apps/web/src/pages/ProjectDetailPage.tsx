@@ -1,8 +1,10 @@
 import { Link, useParams } from "react-router-dom";
 import { ArrowLeft, ArrowUpRight, Code2 } from "lucide-react";
-import { projects, projectStatusLabels } from "@aikemal/shared";
+import { projectStatusLabels } from "@aikemal/shared";
+import { useProjects } from "../lib/projectStore";
 export function ProjectDetailPage() {
   const { slug } = useParams();
+  const { projects } = useProjects();
   const p = projects.find((x) => x.slug === slug);
   if (!p)
     return (

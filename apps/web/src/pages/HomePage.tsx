@@ -1,16 +1,19 @@
 import { Link } from "react-router-dom";
 import { ArrowUpRight, ArrowDown, Asterisk } from "lucide-react";
-import { projects } from "@aikemal/shared";
 import { ProjectCard } from "../components/ProjectCard";
 import { HeroVisual } from "../components/home/HeroVisual";
 import { ExpertiseSection } from "../components/home/ExpertiseSection";
 import { ApproachSection } from "../components/home/ApproachSection";
-// Keep the homepage selection independent of catalog ordering.
-const featuredProjects = ["karmatik", "independentai", "workspace-os"].flatMap(
-  (slug) => projects.filter((project) => project.slug === slug),
-);
+import { useProjects } from "../lib/projectStore";
 
 export function HomePage() {
+  const { projects } = useProjects();
+  // Keep the homepage selection independent of catalog ordering.
+  const featuredProjects = [
+    "karmatik",
+    "independentai",
+    "workspace-os",
+  ].flatMap((slug) => projects.filter((project) => project.slug === slug));
   return (
     <>
       <section className="hero container">

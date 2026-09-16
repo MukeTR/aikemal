@@ -1,8 +1,8 @@
 import { Link, useSearchParams } from "react-router-dom";
 import { ArrowUpRight, Code2, LockKeyhole } from "lucide-react";
-import { projects } from "@aikemal/shared";
 import { ProjectCard } from "../components/ProjectCard";
 import { solutionCount, solutionFamilies } from "../content/solutions";
+import { useProjects } from "../lib/projectStore";
 const filters = [
   "Tümü",
   "YAPAY ZEKÂ",
@@ -11,6 +11,7 @@ const filters = [
   "E-TİCARET",
 ];
 export function ProjectsPage() {
+  const { projects } = useProjects();
   const [params, setParams] = useSearchParams();
   const query = params.get("category") ?? "Tümü";
   const selected = filters.includes(query) ? query : "Tümü";
