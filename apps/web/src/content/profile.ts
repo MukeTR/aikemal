@@ -1,6 +1,27 @@
-// Career details transcribed from the CV supplied by Mustafa Kemal Karataş.
-// Current roles and percentages reflect that CV; do not silently extrapolate them.
+// Career details come from the supplied CV and the user's current-role screenshot.
+// Percentages reflect the CV; do not silently extrapolate them.
 export const experience = [
+  {
+    company: "Kârmatik",
+    role: "Kurucu",
+    period: "Şubat 2026 — devam ediyor",
+    text: "E-ticaret satıcıları için Kârmatik’i sıfırdan kuruyorum. Kârlılık ve hakediş denetimi, buybox takibi, fiyat otomasyonu, kampanya kararları ve rakip analizi tek ürün akışında buluşuyor.",
+    tags: ["SaaS", "E-ticaret", "Solo founder"],
+  },
+  {
+    company: "Dipixel Media",
+    role: "Ortak Kurucu",
+    period: "Mayıs 2026 — devam ediyor",
+    text: "Markaların dijital büyüme ve performans süreçleri üzerinde çalışıyorum. Aktif olarak 8 Meta hesabının günlük yönetimini; e-ticaret, CRM ve müşteri yolculuğu deneyimimle birlikte yürütüyorum.",
+    tags: ["Meta reklamları", "Büyüme", "Performans"],
+  },
+  {
+    company: "Independent AI",
+    role: "Founder",
+    period: "Mart 2025 — devam ediyor",
+    text: "Markaların ChatGPT, Claude ve Gemini gibi yapay zekâ modellerindeki görünürlüğünü anlamaya odaklanan ürünü geliştiriyorum. Araştırma, model bağlantıları, ürün ve raporlama akışları aynı yapıda buluşuyor.",
+    tags: ["GEO", "Yapay zekâ", "Ürün geliştirme"],
+  },
   {
     company: "Melontik",
     role: "Sales & CRM Manager",

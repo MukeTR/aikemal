@@ -15,7 +15,7 @@ export function AboutPage() {
             <span>Mustafa Kemal.</span>
           </h1>
           <p className="about-full-name">
-            Mustafa Kemal Karataş · Tech Sales & Growth Specialist
+            Mustafa Kemal Karataş · Founder & AI Product Builder
           </p>
           <p className="page-intro">
             İşin müşteri tarafını da, sistemi kuran tarafını da seviyorum. SaaS,
@@ -160,18 +160,20 @@ export function AboutPage() {
         <div>
           <p className="eyebrow">ŞU SIRALAR / İŞİN İÇİNDE</p>
           <h2>
-            8 Meta hesabı.
+            Üç kurucu rolü.
             <br />
-            Aktif yönetim.
+            Tek üretim disiplini.
           </h2>
         </div>
         <div>
           <p>
-            Şu anda aktif olarak 8 Meta hesabı yönetiyorum. Satış, CRM ve
-            e-ticaret birikimimi günlük reklam yönetimine taşıyorum.
+            Kârmatik’te e-ticaret SaaS’ı, Dipixel Media’da markaların büyüme
+            süreçlerini, Independent AI’da yapay zekâ görünürlüğünü
+            geliştiriyorum. Dipixel tarafında 8 Meta hesabını aktif olarak
+            yönetiyorum.
           </p>
-          <Link className="text-link" to="/expertise#meta">
-            Reklam yönetimi tarafı <ArrowUpRight size={17} />
+          <Link className="text-link" to="/projects">
+            Ürünleri incele <ArrowUpRight size={17} />
           </Link>
         </div>
       </section>

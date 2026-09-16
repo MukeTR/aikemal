@@ -1,7 +1,8 @@
-import { useSearchParams } from "react-router-dom";
-import { Code2 } from "lucide-react";
+import { Link, useSearchParams } from "react-router-dom";
+import { ArrowUpRight, Code2, LockKeyhole } from "lucide-react";
 import { projects } from "@aikemal/shared";
 import { ProjectCard } from "../components/ProjectCard";
+import { solutionCount, solutionFamilies } from "../content/solutions";
 const filters = [
   "Tümü",
   "YAPAY ZEKÂ",
@@ -64,6 +65,84 @@ export function ProjectsPage() {
         tamamlanmış ürün garantisi değildir. Fikir aşamasındakiler ayrıca
         işaretlendi.
       </p>
+      <section
+        className="solution-archive"
+        aria-labelledby="solution-archive-title"
+      >
+        <div className="solution-archive-heading">
+          <div>
+            <p className="eyebrow">ÇÖZÜM ARŞİVİ / REPO SAYISINDAN FAZLASI</p>
+            <h2 id="solution-archive-title">
+              {solutionCount} çözüm.
+              <br />
+              Dört problem ailesi.
+            </h2>
+          </div>
+          <p>
+            Bazısı yayında bir ürün, bazısı müşteri için kurulmuş sistem, bazısı
+            da daha büyük bir fikrin çalışan deneyi. Ortak tarafları aynı:
+            gerçek bir probleme dokunmaları.
+          </p>
+        </div>
+        <div className="solution-family-grid">
+          {solutionFamilies.map((family) => (
+            <article className="solution-family" key={family.title}>
+              <span className="solution-family-number">{family.number}</span>
+              <h3>{family.title}</h3>
+              <p className="solution-family-intro">{family.intro}</p>
+              <div className="solution-list">
+                {family.items.map((item) => {
+                  const content = (
+                    <>
+                      <span>
+                        <strong>{item.name}</strong>
+                        <small>{item.note}</small>
+                      </span>
+                      {item.private ? (
+                        <LockKeyhole size={15} aria-label="Özel çalışma" />
+                      ) : (
+                        <ArrowUpRight size={16} aria-hidden="true" />
+                      )}
+                    </>
+                  );
+
+                  if (!item.href) {
+                    return (
+                      <div className="solution-row" key={item.name}>
+                        {content}
+                      </div>
+                    );
+                  }
+
+                  return item.href.startsWith("/") ? (
+                    <Link
+                      className="solution-row"
+                      to={item.href}
+                      key={item.name}
+                    >
+                      {content}
+                    </Link>
+                  ) : (
+                    <a
+                      className="solution-row"
+                      href={item.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      key={item.name}
+                    >
+                      {content}
+                    </a>
+                  );
+                })}
+              </div>
+            </article>
+          ))}
+        </div>
+        <p className="solution-archive-note">
+          Kilit simgesi, kodu herkese açık olmayan çalışmaları gösterir. Ürünü
+          saklamıyoruz; anahtarı internete bırakmıyoruz.
+        </p>
+      </section>
     </section>
   );
 }

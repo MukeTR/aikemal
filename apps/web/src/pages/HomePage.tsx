@@ -88,6 +88,11 @@ export function HomePage() {
             geliştirmeyle buluştuğu yer.
           </p>
           <p>
+            Bugün Kârmatik’in kurucusu, Dipixel Media’nın ortak kurucusu ve
+            Independent AI’ın founder’ıyım. Üçünde de fikirden çalışan sisteme
+            uzanan işin içindeyim.
+          </p>
+          <p>
             Müşterinin nerede takıldığını da, bir sistemin nasıl kurulacağını da
             merak ediyorum. Claude ve ChatGPT bu merakın günlük çalışma
             arkadaşları. Ürünleri sıfırdan tek başıma kuruyor; altyapıyı ve

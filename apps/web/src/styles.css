@@ -1142,6 +1142,94 @@ html {
   color: var(--muted);
   margin-top: 25px;
 }
+.solution-archive {
+  margin-top: 75px;
+  padding-top: 55px;
+  border-top: 1px solid var(--line);
+}
+.solution-archive-heading {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: end;
+  margin-bottom: 32px;
+}
+.solution-archive-heading h2 {
+  margin-bottom: 0;
+}
+.solution-archive-heading > p {
+  max-width: 520px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.85;
+}
+.solution-family-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.solution-family {
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #fdfcf6;
+}
+.solution-family:nth-child(1) {
+  background: #eee6a8;
+}
+.solution-family-number {
+  font-family: monospace;
+  color: #776c34;
+  font-size: 11px;
+}
+.solution-family h3 {
+  margin-block: 24px 8px;
+  font-size: 23px;
+}
+.solution-family-intro {
+  min-height: 50px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.75;
+}
+.solution-list {
+  margin-top: 22px;
+  border-top: 1px solid rgb(45 42 27 / 14%);
+}
+.solution-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: center;
+  padding-block: 15px;
+  border-bottom: 1px solid rgb(45 42 27 / 14%);
+}
+a.solution-row:hover strong {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.solution-row > span {
+  display: grid;
+  gap: 4px;
+}
+.solution-row strong {
+  font-size: 13px;
+}
+.solution-row small {
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.55;
+}
+.solution-row svg {
+  flex: 0 0 auto;
+  color: #766c37;
+}
+.solution-archive-note {
+  margin-top: 20px;
+  color: var(--muted);
+  font-size: 10px;
+}
 .detail-category {
   margin-top: 55px;
 }
@@ -1413,6 +1501,20 @@ html {
   }
   .expertise-grid {
     gap: 12px;
+  }
+  .solution-archive-heading,
+  .solution-family-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .solution-archive-heading {
+    align-items: start;
+  }
+  .solution-family {
+    padding: 22px;
+  }
+  .solution-family-intro {
+    min-height: 0;
   }
   .expertise-card {
     padding: 18px;
