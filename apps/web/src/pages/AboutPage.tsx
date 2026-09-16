@@ -35,21 +35,37 @@ export function AboutPage() {
             </a>
           </div>
         </div>
-        <aside className="human-card">
-          <p className="eyebrow">KISA KULLANIM KILAVUZU</p>
-          <Asterisk size={88} strokeWidth={1} />
-          <h2>
-            Merak: yüksek.
-            <br />
-            Boş durma: düşük.
-          </h2>
-          <p>
-            Bir işi üçüncü kez elle yapıyorsam, dördüncü için bir şeyler kurmayı
-            düşünmeye başlamışımdır.
-          </p>
-          <span>
-            “AI Kemal” · arkadaşlar tarafından verilmiş, ortam onaylı lakap
-          </span>
+        <aside className="human-card liquid-portrait">
+          <img
+            src="/images/kemal-eyes-lockscreen.webp"
+            alt="Suluboya gözlerden oluşan telefon ekranı"
+          />
+          <div className="liquid-top-label">
+            <Asterisk size={18} strokeWidth={1.5} />
+            <span>KISA KULLANIM KILAVUZU</span>
+          </div>
+          <div className="liquid-chip empathy-chip">
+            <small>EMPATİ</small>
+            <strong>Yüksek.</strong>
+          </div>
+          <div className="liquid-chip startup-chip">
+            <small>ÇALIŞMA MODU</small>
+            <strong>Startup canavarı.</strong>
+          </div>
+          <div className="liquid-story">
+            <h2>
+              İyi dinlerim.
+              <br />
+              Doğru yeri duyarım.
+            </h2>
+            <p>
+              İnsanların yalnızca söylediğine değil, takıldığı ve sustuğu yere
+              de dikkat ederim.
+            </p>
+            <span>
+              “AI Kemal” · arkadaşlar tarafından verilmiş, ortam onaylı lakap
+            </span>
+          </div>
         </aside>
       </section>
       <section className="bio-section section">
@@ -64,6 +80,18 @@ export function AboutPage() {
             Müşteri deneyiminden satışa, e-ticaretten SaaS’a uzanan yolculuğumda
             hep aynı soruya döndüm: İnsanların işini nasıl kolaylaştırır, bunun
             sonucunu nasıl ölçeriz?
+          </p>
+          <p>
+            Empati benim için özgeçmişe yazılan bir özellik değil, çalışma
+            yöntemim. Karşı tarafı gerçekten dinler; söylediği cümlenin
+            arkasındaki ihtiyacı, sürtünmeyi ve bazen kendisinin bile henüz
+            adını koymadığı problemi anlamaya çalışırım. İyi ürünün ilk
+            prototipi çoğu zaman doğru dinlenmiş bir cümledir.
+          </p>
+          <p>
+            Belirsizlik, az kaynak ve hızlı karar beni germiyor; startup
+            ortamında iştahım açılıyor. Kısacası startup canavarıyım: problemi
+            sahiplenir, gereken şapkayı takar ve işi çalışan noktaya taşırım.
           </p>
           <p>
             Turkcell’de müşteri davranışını ve elde tutmanın önemini sahada
