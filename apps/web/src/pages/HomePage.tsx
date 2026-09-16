@@ -12,7 +12,7 @@ export function HomePage() {
   const featuredProjects = [
     "karmatik",
     "independentai",
-    "workspace-os",
+    "dipixel-media",
   ].flatMap((slug) => projects.filter((project) => project.slug === slug));
   return (
     <>
@@ -96,8 +96,9 @@ export function HomePage() {
             zekâ ve ürün geliştirmeyle buluştuğu yer.
           </p>
           <p>
-            Bugün Kârmatik’in kurucusu, Dipixel Media’nın ortak kurucusu ve
-            Independent AI’ın founder’ıyım. Üçünde de fikirden çalışan sisteme
+            Bugün Kârmatik ve Independent AI’ın kurucusuyum; iki yazılımı da
+            solopreneur olarak sıfırdan, uçtan uca geliştiriyorum. Dipixel
+            Media’da ise ortak kurucuyum. Üçünde de fikirden çalışan sisteme
             uzanan işin içindeyim.
           </p>
           <p>
@@ -123,6 +124,55 @@ export function HomePage() {
           </div>
         </div>
       </section>
+      <section
+        className="client-ecosystem container"
+        aria-label="Müşteri ekosistemi"
+      >
+        <div className="ecosystem-copy">
+          <p className="eyebrow">SAHANIN TAM ORTASINDA</p>
+          <h2>
+            Alanı da tanıyorum.
+            <br />
+            Satanı da. Üreteni de.
+          </h2>
+          <p>
+            Tek bir sektörün dışarıdan danışmanı değilim. E-ticaret markaları,
+            satıcılar, yazılım şirketleri, platformlar ve hizmet işletmeleriyle
+            aynı süreçlerin içinde çalışıyorum. Bu yüzden problemi yalnızca
+            reklam ekranından değil; satıştan operasyona, üründen müşteriye
+            uzanan bütün yolculukta görebiliyorum.
+          </p>
+          <span>
+            Dipixel’de 24 markalık bir ekosistemle çalışıyorum; bunların
+            içindeki 8 Meta hesabını aktif olarak yönetiyorum.
+          </span>
+        </div>
+        <div className="ecosystem-grid">
+          <article>
+            <small>01 / ÜRETEN</small>
+            <h3>Markalar & e-ticaret firmaları</h3>
+            <p>Ürün, teklif, fiyat, kampanya ve gerçek kârlılık.</p>
+          </article>
+          <article>
+            <small>02 / SATAN</small>
+            <h3>Pazaryeri satıcıları</h3>
+            <p>Rekabet, buybox, reklam, operasyon ve müşteri deneyimi.</p>
+          </article>
+          <article>
+            <small>03 / SİSTEMİ KURAN</small>
+            <h3>Yazılımlar, platformlar & ajanslar</h3>
+            <p>
+              SaaS, e-ticaret altyapıları, dijital pazarlama ajansları ve büyüme
+              akışları.
+            </p>
+          </article>
+          <article>
+            <small>04 / İNSANA DOKUNAN</small>
+            <h3>Güzellik & hizmet sektörü</h3>
+            <p>Kuaförlerden estetik merkezlerine, randevudan sadakate.</p>
+          </article>
+        </div>
+      </section>
       <ExpertiseSection />
       <section id="projects" className="projects-wrap">
         <div className="container section projects">
@@ -136,8 +186,8 @@ export function HomePage() {
             </Link>
           </div>
           <p className="section-intro">
-            Yayındaki araçlar ve GitHub’dan seçilmiş çalışmalar. Her birinin
-            arkasında bir “bunu daha iyi yapamaz mıyız?” sorusu var.
+            Üç farklı cephe, aynı çalışma biçimi: problemi sahada gör, veriyi
+            birleştir, maliyeti düşün ve çalışan sistemi kur.
           </p>
           <div className="project-grid">
             {featuredProjects.map((p, i) => (

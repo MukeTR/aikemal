@@ -8,6 +8,7 @@ import {
   Monitor,
   Accessibility,
   Users,
+  Megaphone,
 } from "lucide-react";
 import { projectStatusLabels, type Project } from "@aikemal/shared";
 const icons = {
@@ -17,6 +18,7 @@ const icons = {
   "workspace-os": Monitor,
   accessai: Accessibility,
   "instagram-unfollowers": Users,
+  "dipixel-media": Megaphone,
 };
 export function ProjectCard({
   project,

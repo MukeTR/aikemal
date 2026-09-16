@@ -12,8 +12,8 @@ export const experience = [
     company: "Dipixel Media",
     role: "Ortak Kurucu",
     period: "Mayıs 2026 — devam ediyor",
-    text: "Markaların dijital büyüme ve performans süreçleri üzerinde çalışıyorum. Aktif olarak 8 Meta hesabının günlük yönetimini; e-ticaret, CRM ve müşteri yolculuğu deneyimimle birlikte yürütüyorum.",
-    tags: ["Meta reklamları", "Büyüme", "Performans"],
+    text: "24 markalık müşteri ekosisteminin dijital büyüme ve performans süreçleri üzerinde çalışıyorum. Güzellik ve hizmet işletmelerinden e-ticaret firmalarına, yazılım şirketlerine, platformlara ve dijital pazarlama ajanslarına uzanan yapı içindeki 8 Meta hesabının günlük yönetimini; e-ticaret, CRM ve müşteri yolculuğu deneyimimle birlikte yürütüyorum.",
+    tags: ["24 marka", "8 Meta hesabı", "Büyüme", "Performans"],
   },
   {
     company: "Independent AI",
@@ -43,17 +43,20 @@ export const experience = [
     company: "Roketfy",
     role: "Sales & Customer Success Team Lead",
     period: "Şubat 2023 — 2025",
-    text: "Roketfy’a katıldığımda yaklaşık 30 olan müşteri sayısını, ayrıldığım dönemde 500’e taşıdım. Müşteri başarı ekibi ve satış süreçlerinin yanında onboarding, paketler, ödeme akışları, fiyatlandırma, kampanyalar ve Gleap gibi sistem entegrasyonları üzerinde çalıştım. Satış–ürün–müşteri ekipleri arasındaki koordinasyonu ve müşteri verisine dayalı upsell / cross-sell akışlarını yönettim.",
+    text: "Roketfy’a katıldığımda yaklaşık 30 olan müşteri sayısını, ayrıldığım dönemde 500’e taşıdım. Müşteri başarı ekibi ve satış süreçlerinin yanında onboarding, paketler, ödeme akışları, fiyatlandırma, kampanyalar ve Gleap gibi sistem entegrasyonları üzerinde çalıştım. Ayrıca döneminin erken uçtan uca AI destekli print-on-demand ürünlerinden POD AI’ın Project Manager’ıydım. Ürün ve üretici seçiminden AI tasarım üretimine, varyant mockup’larından SEO uyumlu içeriğe ve Printify üzerinden mağazaya taslak göndermeye uzanan ürün akışını yönettim.",
     tags: [
       "SaaS",
       "Onboarding",
       "Müşteri başarısı",
       "Paket kurgusu",
       "Entegrasyon",
+      "POD AI",
+      "Product Management",
     ],
     highlights: [
       { value: "30 → 500", label: "müşteri" },
       { value: ">16×", label: "müşteri ölçeği" },
+      { value: "POD AI", label: "Project Manager" },
     ],
   },
   {

@@ -407,6 +407,62 @@ h2 {
   padding: 7px 10px;
   font-size: 10px;
 }
+.client-ecosystem {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 70px;
+  margin-block: 42px 10px;
+  padding: 42px;
+  border-radius: 12px;
+  background: #e7d968;
+}
+.ecosystem-copy h2 {
+  margin-bottom: 17px;
+}
+.ecosystem-copy > p:not(.eyebrow) {
+  max-width: 530px;
+  color: #58543c;
+  font-size: 13px;
+  line-height: 1.85;
+}
+.ecosystem-copy > span {
+  display: block;
+  margin-top: 24px;
+  padding-top: 17px;
+  border-top: 1px solid rgb(51 48 28 / 22%);
+  color: #4f4930;
+  font-size: 10px;
+  line-height: 1.65;
+}
+.ecosystem-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 11px;
+}
+.ecosystem-grid article {
+  min-height: 165px;
+  padding: 22px;
+  border: 1px solid rgb(57 52 28 / 18%);
+  border-radius: 9px;
+  background: rgb(255 253 235 / 48%);
+}
+.ecosystem-grid small {
+  color: #776e37;
+  font-family: monospace;
+  font-size: 8px;
+  letter-spacing: 0.8px;
+}
+.ecosystem-grid h3 {
+  margin: 30px 0 8px;
+  font-size: 16px;
+  letter-spacing: -0.5px;
+}
+.ecosystem-grid p {
+  margin: 0;
+  color: #656046;
+  font-size: 10px;
+  line-height: 1.65;
+}
 .section-heading {
   display: flex;
   justify-content: space-between;
@@ -655,6 +711,10 @@ textarea {
   .about {
     gap: 50px;
   }
+  .client-ecosystem {
+    gap: 35px;
+    padding: 32px;
+  }
   .focus-strip p {
     gap: 20px;
   }
@@ -732,6 +792,21 @@ textarea {
   .about {
     grid-template-columns: 1fr;
     gap: 12px;
+  }
+  .client-ecosystem,
+  .ecosystem-grid {
+    grid-template-columns: 1fr;
+  }
+  .client-ecosystem {
+    gap: 24px;
+    margin-block: 22px 0;
+    padding: 25px;
+  }
+  .ecosystem-grid article {
+    min-height: 0;
+  }
+  .ecosystem-grid h3 {
+    margin-top: 20px;
   }
   h2 {
     font-size: 30px;

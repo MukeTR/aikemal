@@ -18,11 +18,28 @@ export type Project = {
 };
 export const projects: Project[] = [
   {
+    slug: "dipixel-media",
+    name: "Dipixel Media",
+    category: "BÜYÜME & PERFORMANS",
+    status: "live",
+    tags: ["24 marka", "8 Meta hesabı", "Performans"],
+    description:
+      "Güzellikten e-ticarete, yazılımdan hizmet sektörüne uzanan markaların büyüme masası.",
+    problem:
+      "Reklam, teklif, müşteri yolculuğu ve operasyon birbirinden kopuk yönetildiğinde ekranlarda hareket olur; işte aynı netlik oluşmaz.",
+    approach:
+      "Meta hesaplarının günlük yönetimini CRM, e-ticaret, satış ve müşteri deneyimiyle birlikte ele alıyor. Kampanyayı yalnızca reklam metriğiyle değil, işin bütün akışındaki etkisiyle değerlendiriyor.",
+    scope:
+      "24 markalık müşteri ekosistemi; kuaför ve estetik merkezleri gibi güzellik işletmelerinden e-ticaret firmalarına, satıcılara, yazılım şirketlerine, platformlara ve dijital pazarlama ajanslarına uzanıyor. Bu yapı içindeki 8 Meta hesabını aktif olarak yönetiyorum.",
+    builderNote:
+      "Dipixel Media’nın ortak kurucusu olarak strateji, performans, sistem ve müşteri tarafında doğrudan işin içindeyim.",
+  },
+  {
     slug: "independentai",
     name: "Independent AI",
     category: "YAPAY ZEKÂ",
     status: "repository",
-    tags: ["GEO", "Çoklu model", "TypeScript"],
+    tags: ["Solopreneur", "GEO", "Çoklu model"],
     github: "https://github.com/MukeTR/independentai",
     description:
       "Markalar için can sıkıcı soru: Yapay zekâ neden beni değil, rakibimi öneriyor?",
@@ -30,6 +47,8 @@ export const projects: Project[] = [
       "Markalar görünürlük için emek harcıyor; ama ChatGPT, Claude veya Gemini’ye sorulduğunda yanıtta yer alıp almadıklarını görmekte zorlanıyor. Independent AI bu görünürlük boşluğuna odaklanıyor.",
     approach:
       "ChatGPT, Claude ve Gemini yanıtlarında marka görünürlüğünü ölçmeye yönelik bir uygulama. Model bağlantıları, marka bahsi çıkarımı ve raporlama aynı ürün akışında buluşuyor.",
+    builderNote:
+      "Independent AI’ın kurucusuyum. Ürün stratejisinden model bağlantılarına, arayüzden veri ve raporlama akışlarına kadar yazılımı solopreneur olarak sıfırdan geliştiriyorum.",
     scope:
       "Repo, Next.js arayüzü, Prisma veri katmanı ve model adaptörleri içeriyor. API anahtarları olmadan mock moduyla çalışacak şekilde tasarlanmış.",
   },
@@ -87,7 +106,7 @@ export const projects: Project[] = [
     category: "E-TİCARET",
     status: "live",
     website: "https://karmatik.io",
-    tags: ["Yayında", "Kârlılık", "Buybox takibi"],
+    tags: ["Yayında", "Solopreneur", "Kârlılık", "Buybox takibi"],
     description:
       "Mağazanın kârı, fiyat rekabeti ve pazarlama kararları aynı panelde. Excel biraz dinlensin.",
     problem:

@@ -199,7 +199,8 @@ export function AboutPage() {
           <p>
             Kârmatik’te e-ticaret SaaS’ı, Dipixel Media’da markaların büyüme
             süreçlerini, Independent AI’da yapay zekâ görünürlüğünü
-            geliştiriyorum. Dipixel tarafında 8 Meta hesabını aktif olarak
+            geliştiriyorum. Dipixel tarafında 24 markalık bir ekosistemle
+            çalışıyorum; bunların içindeki 8 Meta hesabını aktif olarak
             yönetiyorum.
           </p>
           <Link className="text-link" to="/projects">
