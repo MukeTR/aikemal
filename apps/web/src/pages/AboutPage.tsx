@@ -47,7 +47,9 @@ export function AboutPage() {
             Bir işi üçüncü kez elle yapıyorsam, dördüncü için bir şeyler kurmayı
             düşünmeye başlamışımdır.
           </p>
-          <span>İnsan sürümü · düzenli güncellenir</span>
+          <span>
+            “AI Kemal” · arkadaşlar tarafından verilmiş, ortam onaylı lakap
+          </span>
         </aside>
       </section>
       <section className="bio-section section">

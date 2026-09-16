@@ -87,9 +87,13 @@ export function HomePage() {
         <div className="about-copy">
           <h3>AI Kemal nedir?</h3>
           <p>
-            Mustafa Kemal Karataş’ın dijital atölyesi. Müşteri deneyimi, SaaS,
-            CRM ve e-ticaretten gelen birikimin; yapay zekâ ve ürün
-            geliştirmeyle buluştuğu yer.
+            Adını benim koyduğum havalı bir marka değil. Arkadaşlarımın ortamda
+            taktığı bir lakap; sonra biraz fazla isabetli olduğu için kaldı.
+            Burası da Mustafa Kemal Karataş’ın dijital atölyesi.
+          </p>
+          <p>
+            Müşteri deneyimi, SaaS, CRM ve e-ticaretten gelen birikimin; yapay
+            zekâ ve ürün geliştirmeyle buluştuğu yer.
           </p>
           <p>
             Bugün Kârmatik’in kurucusu, Dipixel Media’nın ortak kurucusu ve
