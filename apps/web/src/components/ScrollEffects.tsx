@@ -1,34 +1,73 @@
 import { useLayoutEffect, useRef } from "react";
 
-const revealGroups = [
-  ".section-heading > *",
-  ".about > *",
-  ".client-ecosystem > *",
-  ".ecosystem-grid article",
-  ".expertise-card",
-  ".project-card",
-  ".step",
-  ".ask-banner > *",
-  ".about-hero > *",
-  ".bio-section > *",
-  ".solo-builder-section > *",
-  ".builder-principles article",
-  ".current-work > *",
-  ".outcomes-grid article",
-  ".career-section > *",
-  ".timeline article",
-  ".background-grid article",
-  ".project-page-heading > *",
-  ".case-layout > *",
-  ".ask-heading > *",
-  ".brief-progress",
-  ".brief-form",
+type RevealGroup = [string, string[]];
+
+const sharedGroups: RevealGroup[] = [
+  [".section-heading > *", ["wipe", "slide-right"]],
+];
+
+const pageGroups: Record<string, RevealGroup[]> = {
+  home: [
+    [".about > *", ["slide-left", "slide-right"]],
+    [".client-ecosystem > *", ["tilt-left", "scale"]],
+    [".ecosystem-grid article", ["scale", "tilt-right", "tilt-left"]],
+    [".expertise-card", ["slide-left", "rise", "slide-right", "scale"]],
+    [".project-card", ["clip-left", "scale", "clip-right"]],
+    [".step", ["slide-right", "wipe"]],
+    [".ask-banner > *", ["scale", "slide-left", "slide-right"]],
+  ],
+  about: [
+    [".about-hero > *", ["liquid-left", "liquid-scale"]],
+    [".bio-section > *", ["text-unfold", "slide-right"]],
+    [".solo-builder-section > *", ["tilt-left", "slide-right"]],
+    [".builder-principles article", ["float-up", "tilt-left", "tilt-right"]],
+    [".current-work > *", ["slide-left", "slide-right"]],
+    [".outcomes-grid article", ["counter-pop", "counter-pop", "counter-pop"]],
+    [".career-section > *", ["text-unfold", "slide-right"]],
+    [".timeline article", ["timeline-in", "timeline-in"]],
+    [".background-grid article", ["tilt-left", "scale", "tilt-right"]],
+  ],
+  projects: [
+    [".project-filters", ["catalog-drop"]],
+    [".result-count", ["wipe"]],
+    [".project-card", ["catalog-left", "catalog-up", "catalog-right"]],
+    [".solution-archive-heading > *", ["slide-left", "slide-right"]],
+    [".solution-family", ["catalog-left", "catalog-up", "catalog-right"]],
+  ],
+  expertise: [
+    [".expertise-jumps", ["wipe"]],
+    [".expertise-detail", ["blueprint-left", "blueprint-right"]],
+    [".task-list li", ["slide-right", "slide-right"]],
+    [".example-box", ["scale"]],
+  ],
+  ask: [
+    [".ask-heading > *", ["form-left", "form-right"]],
+    [".brief-progress", ["wipe"]],
+    [".brief-form", ["form-rise"]],
+    [".brief-result-grid > *", ["form-left", "form-right"]],
+  ],
+  "project-detail": [
+    [".project-detail > *", ["document-rise", "text-unfold"]],
+    [".case-layout > *", ["clip-left", "clip-right"]],
+    [".project-capabilities > *", ["document-rise", "wipe"]],
+    [".capability-grid > *", ["scale", "document-rise"]],
+  ],
+  admin: [
+    [".admin-hero > *", ["slide-left", "slide-right"]],
+    [".admin-form", ["document-rise"]],
+    [".admin-project-list", ["document-rise"]],
+  ],
+};
+
+const fallbackGroups: RevealGroup[] = [
+  [".about-hero > *", ["slide-left", "scale"]],
 ];
 
 const parallaxGroups: Array<[string, number]> = [
   [".hero-visual", 18],
   [".human-card > img", 14],
   [".project-art > svg", 12],
+  [".project-art > img", 16],
   [".banner-star", 16],
 ];
 
@@ -41,13 +80,23 @@ export function ScrollEffects({ routeKey }: { routeKey: string }) {
     const main = document.querySelector("main");
     if (!main) return;
 
+    const pageName =
+      routeKey === "/"
+        ? "home"
+        : routeKey.startsWith("/projects/")
+          ? "project-detail"
+          : routeKey.slice(1).split("/")[0] || "home";
+    const revealGroups = [
+      ...sharedGroups,
+      ...(pageGroups[pageName] ?? fallbackGroups),
+    ];
+    main.dataset.motionPage = pageName;
     const revealElements = new Set<HTMLElement>();
 
-    revealGroups.forEach((selector, groupIndex) => {
+    revealGroups.forEach(([selector, effects]) => {
       main.querySelectorAll<HTMLElement>(selector).forEach((element, index) => {
-        element.dataset.reveal =
-          groupIndex % 3 === 1 && index % 2 === 0 ? "left" : "up";
-        element.style.setProperty("--reveal-delay", `${(index % 4) * 90}ms`);
+        element.dataset.reveal = effects[index % effects.length];
+        element.style.setProperty("--reveal-delay", `${(index % 4) * 80}ms`);
         revealElements.add(element);
       });
     });
@@ -60,7 +109,7 @@ export function ScrollEffects({ routeKey }: { routeKey: string }) {
           observer.unobserve(entry.target);
         });
       },
-      { threshold: 0.12, rootMargin: "0px 0px -7%" },
+      { threshold: 0.01, rootMargin: "0px 0px -7%" },
     );
 
     revealElements.forEach((element) => observer.observe(element));
@@ -110,6 +159,7 @@ export function ScrollEffects({ routeKey }: { routeKey: string }) {
       window.removeEventListener("resize", requestUpdate);
       if (frame) window.cancelAnimationFrame(frame);
       document.documentElement.classList.remove("motion-enabled");
+      delete main.dataset.motionPage;
       revealElements.forEach((element) => {
         delete element.dataset.reveal;
         element.classList.remove("is-revealed");

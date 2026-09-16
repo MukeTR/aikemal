@@ -20,6 +20,11 @@ const icons = {
   "instagram-unfollowers": Users,
   "dipixel-media": Megaphone,
 };
+const artworks: Record<string, string> = {
+  karmatik: "/images/project-karmatik.webp",
+  independentai: "/images/project-independent-ai.webp",
+  "dipixel-media": "/images/project-dipixel.webp",
+};
 export function ProjectCard({
   project,
   index,
@@ -28,10 +33,21 @@ export function ProjectCard({
   index: number;
 }) {
   const Icon = icons[project.slug as keyof typeof icons] ?? Layers3;
+  const artwork = artworks[project.slug];
   return (
-    <article className="project-card">
-      <div className={"project-art art-" + (index % 3)}>
-        <Icon size={56} strokeWidth={1.2} />
+    <article
+      className={`project-card project-card--${index % 3}`}
+      data-project-card={project.slug}
+    >
+      <div
+        className={`project-art art-${index % 3}${artwork ? " has-art" : ""}`}
+        data-project={project.slug}
+      >
+        {artwork ? (
+          <img src={artwork} alt="" loading="lazy" decoding="async" />
+        ) : (
+          <Icon size={56} strokeWidth={1.2} />
+        )}
         <span className="soon">{projectStatusLabels[project.status]}</span>
         <span className="art-number">0{index + 1}</span>
       </div>

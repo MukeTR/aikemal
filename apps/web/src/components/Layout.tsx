@@ -4,6 +4,12 @@ import { useEffect } from "react";
 import { ScrollEffects } from "./ScrollEffects";
 export function Layout() {
   const { pathname, hash } = useLocation();
+  const routeName =
+    pathname === "/"
+      ? "home"
+      : pathname.startsWith("/projects/")
+        ? "project-detail"
+        : pathname.slice(1).replaceAll("/", "-") || "home";
   useEffect(() => {
     if (hash) document.getElementById(hash.slice(1))?.scrollIntoView();
     else window.scrollTo(0, 0);
@@ -31,7 +37,7 @@ export function Layout() {
         </nav>
       </header>
       <main id="main" tabIndex={-1}>
-        <div className="route-stage" key={pathname}>
+        <div className={`route-stage route-${routeName}`} key={pathname}>
           <Outlet />
         </div>
       </main>
