@@ -73,8 +73,8 @@ export const solutionFamilies: SolutionFamily[] = [
         href: "https://github.com/MukeTR/crm",
       },
       {
-        name: "WP Messenger Humanlike",
-        note: "WordPress mesaj akışlarını daha doğal hâle getiren otomasyon.",
+        name: "WhatsApp Messenger Agent",
+        note: "WhatsApp mesajlarını masaüstünden kontrol edip yöneten; insan benzeri tempo, bekleme ve etkileşim davranışlarıyla çalışan agent.",
         href: "https://github.com/MukeTR/wp-messenger-humanlike",
       },
     ],
