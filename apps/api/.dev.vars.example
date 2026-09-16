@@ -1,0 +1,3 @@
+# Optional; no credentials are required for mock endpoints.
+SUPABASE_URL=
+SUPABASE_PUBLISHABLE_KEY=
