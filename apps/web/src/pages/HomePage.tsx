@@ -1,148 +1,144 @@
 import { Link } from "react-router-dom";
-import {
-  ArrowUpRight,
-  ArrowRight,
-  Asterisk,
-  Sparkles,
-  Terminal,
-  TrendingUp,
-} from "lucide-react";
+import { ArrowUpRight, ArrowDown, Asterisk } from "lucide-react";
 import { projects } from "@aikemal/shared";
 import { ProjectCard } from "../components/ProjectCard";
+import { HeroVisual } from "../components/home/HeroVisual";
+import { ExpertiseSection } from "../components/home/ExpertiseSection";
+import { ApproachSection } from "../components/home/ApproachSection";
 export function HomePage() {
   return (
     <>
       <section className="hero container">
         <div className="hero-copy">
           <p className="eyebrow">
-            <span className="live-dot" /> MERAKTAN ÜRETİME, HER GÜN.
+            <span className="live-dot" /> İNSAN MERAKI × YAPAY ZEKÂ
           </p>
           <h1>
-            Fikir çok.
+            Yapay zekâ
             <br />
-            Mesele <span>üretmek.</span>
+            benim <span>sağ kolum.</span>
           </h1>
           <p className="hero-description">
-            Benim dünyamda yapay zekâ, e-ticaret ve dijital ürünler bir araya
-            geliyor. Fikirleri konuşuyor, deniyor ve işe yarayan şeylere
-            dönüştürüyoruz.
+            Ben Kemal. Claude, ChatGPT ve bir dolu aracı elim gibi kullanıyorum.
+            Fikirleri ürüne, dağınık işleri sisteme dönüştürüyorum.
           </p>
           <div className="hero-actions">
-            <Link className="button dark" to="/ask">
-              AI Kemal’e sor <ArrowUpRight size={19} />
+            <Link className="button dark" to="/projects">
+              Neler üretiyorum? <ArrowUpRight size={19} />
             </Link>
-            <Link className="text-link" to="/#projects">
-              Neler üretiyorum? <ArrowDownIcon />
+            <Link className="text-link" to="/ask">
+              Birlikte düşünelim <ArrowUpRight size={17} />
             </Link>
           </div>
           <p className="hero-note">
-            <span className="mini-spark">✳</span> Biraz teknoloji. Biraz
-            girişimcilik. Bolca merak.
+            <span className="mini-spark">✳</span> Kahveyi hâlâ ben yapıyorum.
+            Şimdilik.
           </p>
         </div>
-        <div
-          className="hero-visual"
-          aria-label="Fikir, deney ve ürün arasında bağ kuran AI Kemal illüstrasyonu"
-        >
-          <div className="visual-top">
-            <span>AI KEMAL / ÜRETİM ALANI</span>
-            <span>V.01 ↗</span>
-          </div>
-          <div className="orbit orbit-one" />
-          <div className="orbit orbit-two" />
-          <div className="float-chip chip-ai">
-            <Sparkles size={16} /> Yapay zekâ
-          </div>
-          <div className="float-chip chip-code">
-            <Terminal size={16} /> Dijital ürünler
-          </div>
-          <div className="float-chip chip-growth">
-            <TrendingUp size={16} /> Büyüme
-          </div>
-          <div className="core">
-            <Asterisk strokeWidth={1.1} />
-          </div>
-          <span className="visual-plus plus-one">+</span>
-          <span className="visual-plus plus-two">+</span>
-          <div className="visual-bottom">
-            <span>
-              <i /> Sürekli yapım aşamasında.
-            </span>
-            <span>FİKİR → DENEY → ÜRÜN</span>
-          </div>
-        </div>
+        <HeroVisual />
       </section>
       <div className="focus-strip">
         <div className="container">
-          <span>ODAK NOKTALARIM</span>
+          <span>AYNI MASADA BULUŞANLAR</span>
           <p>
-            Yapay zekâ <Asterisk /> E-ticaret <Asterisk /> Dijital ürünler{" "}
-            <Asterisk /> Büyüme
+            Claude & ChatGPT <Asterisk /> CRM & otomasyon <Asterisk /> Ürün &
+            büyüme
           </p>
         </div>
       </div>
+      <nav className="container layer-nav" aria-label="Ana sayfa bölümleri">
+        <a href="#about">
+          <span>01</span> Kemal kim?
+        </a>
+        <a href="#expertise">
+          <span>02</span> İşin mutfağı
+        </a>
+        <a href="#projects">
+          <span>03</span> Somut işler
+        </a>
+        <a href="#approach">
+          <span>04</span> Nasıl çalışırım? <ArrowDown size={14} />
+        </a>
+      </nav>
       <section id="about" className="about container section">
         <div>
           <p className="eyebrow">01 / TANIŞALIM</p>
           <h2>
-            Bir chatbot’tan
+            Biraz satış.
             <br />
-            biraz daha fazlası.
+            Biraz yazılım.
+            <br />
+            Bolca “ya şöyle yapsak?”
           </h2>
+          <Link className="text-link" to="/about">
+            Kemal’in uzun versiyonu <ArrowUpRight size={18} />
+          </Link>
         </div>
         <div className="about-copy">
           <h3>AI Kemal nedir?</h3>
           <p>
-            Düşündüklerimin, ürettiklerimin ve öğrendiklerimin buluştuğu bir
-            alan. Yapay zekâyı gerçek problemlere uygulamak ve iyi fikirlerin
-            ilk adımını atmak için buradayım.
+            Mustafa Kemal Karataş’ın dijital atölyesi. Müşteri deneyimi, SaaS,
+            CRM ve e-ticaretten gelen birikimin; yapay zekâ ve ürün
+            geliştirmeyle buluştuğu yer.
           </p>
           <p>
-            Burası aynı zamanda açık bir atölye. Yeni araçlar, küçük deneyler ve
-            zamanla büyüyen projeler. Her şey tamamlanmış değil; zaten güzel
-            tarafı da bu.
+            Müşterinin nerede takıldığını da, bir sistemin nasıl kurulacağını da
+            merak ediyorum. Claude ve ChatGPT bu merakın günlük çalışma
+            arkadaşları. Fikri konuşuyor, küçük bir sürüm yapıyor, sonra
+            gerçekten işe yarıyor mu diye bakıyoruz.
+          </p>
+          <p>
+            Burada uzmanlıklarım, GitHub projelerim ve henüz tezgâhtan kalkmamış
+            fikirlerim var. İçerisi biraz kalabalık. Kafa da öyle.
           </p>
           <div className="tags">
-            <span>Pratik düşünce</span>
-            <span>Gerçek problemler</span>
-            <span>Sürekli üretim</span>
+            <span>SaaS & büyüme</span>
+            <span>CRM & müşteri yolculuğu</span>
+            <span>AI ile üretim</span>
           </div>
         </div>
       </section>
-      <section id="projects" className="container section projects">
-        <div className="section-heading">
-          <div>
-            <p className="eyebrow">02 / ATÖLYEDEN</p>
-            <h2>Fikirler, iş başında.</h2>
+      <ExpertiseSection />
+      <section id="projects" className="projects-wrap">
+        <div className="container section projects">
+          <div className="section-heading">
+            <div>
+              <p className="eyebrow">03 / KONUŞTUK, SONRA YAPTIK</p>
+              <h2>Repo var. Laf kalabalığı az.</h2>
+            </div>
+            <Link className="text-link" to="/projects">
+              Atölyenin tamamı <ArrowUpRight size={18} />
+            </Link>
           </div>
-          <Link className="text-link" to="/projects">
-            Tüm projeler <ArrowUpRight size={18} />
-          </Link>
-        </div>
-        <div className="project-grid">
-          {projects.map((p, i) => (
-            <ProjectCard key={p.slug} project={p} index={i} />
-          ))}
+          <p className="section-intro">
+            GitHub’dan seçilmiş çalışmalar. Her birinin arkasında bir “bunu daha
+            iyi yapamaz mıyız?” sorusu var.
+          </p>
+          <div className="project-grid">
+            {projects.slice(0, 3).map((p, i) => (
+              <ProjectCard key={p.slug} project={p} index={i} />
+            ))}
+          </div>
         </div>
       </section>
+      <div id="approach">
+        <ApproachSection />
+      </div>
       <section className="container">
         <div className="ask-banner">
-          <Asterisk className="banner-star" size={92} strokeWidth={1} />
+          <Asterisk className="banner-star" size={82} strokeWidth={1} />
           <div>
-            <p className="eyebrow">03 / BİRLİKTE DÜŞÜNELİM</p>
-            <h2>Aklında bir şey mi var?</h2>
+            <p className="eyebrow">05 / SÖZ SENDE</p>
+            <h2>“Aklımda bir şey var” diyorsan…</h2>
             <p>
-              Bir fikir, bir soru ya da “nereden başlasam?” dediğin o proje.
+              Tamam, en sevdiğim cümle. Biraz anlat; gerisini birlikte açarız.
             </p>
           </div>
           <Link className="button dark" to="/ask">
-            AI Kemal’e sor <ArrowUpRight size={18} />
+            Masaya koy <ArrowUpRight size={18} />
           </Link>
         </div>
       </section>
     </>
   );
-}
-function ArrowDownIcon() {
-  return <ArrowRight size={17} className="down-arrow" />;
 }

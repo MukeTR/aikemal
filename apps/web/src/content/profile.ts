@@ -1,0 +1,56 @@
+// Career details transcribed from the CV supplied by Mustafa Kemal Karataş.
+// Current roles and percentages reflect that CV; do not silently extrapolate them.
+export const experience = [
+  {
+    company: "Melontik",
+    role: "Sales & CRM Manager",
+    period: "2025 — devam ediyor",
+    text: "Satış büyümesini destekleyen CRM altyapısı, segmentasyon ve lead scoring modelleri. Lead’den aktivasyon, dönüşüm ve elde tutmaya uzanan satış akışları; e-posta, WhatsApp ve CRM otomasyonları.",
+    tags: ["CRM altyapısı", "Lead scoring", "A/B testleri"],
+  },
+  {
+    company: "Roketfy",
+    role: "Sales & Customer Success Team Lead",
+    period: "Şubat 2023 — 2025",
+    text: "SaaS ortamında müşteri başarı ekibi ve satış süreçleri. Yapılandırılmış onboarding, satış–ürün–müşteri ekipleri arasında koordinasyon ve müşteri verisiyle upsell / cross-sell fırsatları.",
+    tags: ["SaaS", "Onboarding", "Müşteri başarısı"],
+  },
+  {
+    company: "Freelance",
+    role: "E-Commerce & Growth Consultant",
+    period: "2023 — devam ediyor",
+    text: "E-ticaret markaları için büyüme stratejileri, dönüşüm ve elde tutma akışları. CRM ve pazarlama otomasyonu; Shopify, pazaryeri operasyonları, SEO ve performans değerlendirmeleri.",
+    tags: ["Shopify", "Büyüme", "Otomasyon"],
+  },
+  {
+    company: "Atam Güzellik Tic. A.Ş.",
+    role: "E-Commerce Manager",
+    period: "Mart 2022 — Şubat 2023",
+    text: "Reklam, lojistik ve CRM dâhil e-ticaret operasyonlarının yönetimi. Kampanya optimizasyonu, ERP entegrasyonları ve iş performansını izleyen KPI panoları.",
+    tags: ["E-ticaret", "ERP", "KPI"],
+  },
+  {
+    company: "Turkcell",
+    role: "Customer Experience Specialist",
+    period: "Ağustos 2016 — Şubat 2022",
+    text: "Yoğun müşteri etkileşimleri ve elde tutma süreçleri. Müşteri memnuniyeti, kalite performansı ve CRM iyileştirmeleriyle müşteri davranışını sahada öğrenme dönemi.",
+    tags: ["Müşteri deneyimi", "Retention", "CRM"],
+  },
+];
+export const outcomes = [
+  {
+    value: "+%25",
+    label: "Aktivasyon oranı",
+    context: "Roketfy · yapılandırılmış onboarding ve satış uyumu",
+  },
+  {
+    value: "+%35",
+    label: "Müşteri memnuniyeti",
+    context: "Roketfy · müşteri başarısı çalışmaları",
+  },
+  {
+    value: "+%40",
+    label: "Aylık gelir",
+    context: "Atam Güzellik · kampanya optimizasyonu",
+  },
+];

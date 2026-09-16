@@ -26,9 +26,10 @@ export function AskPage() {
   return (
     <section className="container page ask-page">
       <p className="eyebrow">BİRLİKTE DÜŞÜNELİM</p>
-      <h1>İlk adım, iyi bir soru.</h1>
+      <h1>Anlat bakalım.</h1>
       <p className="page-intro">
-        Fikrini masaya koy. Birlikte nereden başlayabileceğine bakalım.
+        Fikir, problem, “şunu otomatiğe bağlasak” meselesi… Hepsi masaya
+        gelebilir.
       </p>
       <div className="demo-notice">
         <Asterisk size={20} />

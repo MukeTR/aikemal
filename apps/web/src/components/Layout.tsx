@@ -20,7 +20,8 @@ export function Layout() {
           ai kemal<span className="brand-dot">.</span>
         </Link>
         <nav aria-label="Ana menü">
-          <Link to="/#about">Hakkında</Link>
+          <NavLink to="/about">Kemal kim?</NavLink>
+          <NavLink to="/expertise">Uzmanlıklar</NavLink>
           <NavLink to="/projects">Projeler & araçlar</NavLink>
           <Link className="nav-cta" to="/ask">
             Birlikte düşünelim <ArrowUpRight size={16} />
@@ -34,7 +35,10 @@ export function Layout() {
         <Link className="brand" to="/">
           ai kemal.
         </Link>
-        <p>Merak et. Dene. Üret. Tekrarla.</p>
+        <p>Ciddiyet işte. Mizah her yerde.</p>
+        <a href="https://github.com/MukeTR" target="_blank" rel="noreferrer">
+          GitHub ↗
+        </a>
         <span>© {new Date().getFullYear()} AI Kemal</span>
         <a href="#main" aria-label="Sayfanın başına dön">
           Yukarı ↑

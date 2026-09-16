@@ -38,11 +38,11 @@ Web → aynı origin `/api/*` → Worker → ileride Supabase / LLM. Production 
 ## Sayfalar ve endpoint'ler
 
 - `/`: hero, AI Kemal nedir, proje placeholder'ları, sohbet CTA, footer.
-- `/projects`: planlanan araçların vitrini; kartlar henüz çalışan ürünler değildir.
+- `/projects`: GitHub projeleri ve planlanan araçlar; kategori filtresi ve detay sayfaları.
 - `/ask`: boş/gönderiliyor/başarılı/hata durumları olan mock sohbet formu.
 - Diğer UI yolları: 404 ekranı.
 - `GET /api/health`: mock modu ve Supabase yapılandırmasının varlığı. Bağlantı testi değildir.
-- `GET /api/projects`: ortak paketten placeholder kayıtları.
+- `GET /api/projects`: ortak paketten proje kataloğu.
 - `POST /api/chat`: `{ "message": "Merhaba" }` → `{ "mode": "mock", "reply": "..." }`.
 
 Chat JSON gerektirir; 1–1000 karakter mesaj ve 8 KiB istek sınırı vardır. Yanıt sabit bir örnektir. Mesajlar loglanmaz veya saklanmaz. Gerçek LLM, kimlik doğrulama, konuşma hafızası ve rate limiting henüz eklenmedi.
@@ -88,3 +88,22 @@ Statik frontend ve hafif mock API, ücretsiz katmanlara uygun şekilde tasarland
 Resmî kaynaklar: [Workers Static Assets](https://developers.cloudflare.com/workers/static-assets/), [Workers limitleri](https://developers.cloudflare.com/workers/platform/limits/), [Supabase fiyatlandırma](https://supabase.com/pricing), [Supabase API anahtarları](https://supabase.com/docs/guides/getting-started/api-keys).
 
 Google Fonts üzerinden Manrope ve DM Sans yüklenir; ağ yoksa yerel sans-serif fallback kullanılır. Görsel dil CSS ve SVG ile oluşturuldu; harici görsel servisine ihtiyaç yoktur.
+
+## Kişisel içerik ve portfolio (ikinci sürüm)
+
+- `/about`: CV'den hazırlanan biyografi, kariyer zaman çizelgesi, görev dönemlerine ait sonuçlar, eğitim ve sertifikalar.
+- `/expertise`: Claude, ChatGPT, CRM/otomasyon ve ürün/e-ticaret çalışma alanları; bölüm bağlantıları.
+- `/projects`: URL parametresiyle korunabilen kategori filtreleri.
+- `/projects/:slug`: problem, yaklaşım, kapsam, kaynak repo ve gerektiğinde katkı atfı.
+- Ana sayfa: sarıya yakın vurgu rengi, bölüm navigasyonu, uzmanlık kartları, seçilmiş projeler, açılır çalışma adımları ve yıldızdaki küçük mizahi etkileşim.
+
+İçerik kaynakları: kullanıcının sağladığı CV ve 17 Eylül 2026 tarihinde incelenen GitHub repo/README'leri. Kariyer verileri `apps/web/src/content/profile.ts`, uzmanlık metinleri `apps/web/src/content/expertise.ts`, proje kataloğu `packages/shared/src/index.ts` içinde tutulur. CV'nin kendisi, telefon ve e-posta repo/public dizinine eklenmedi. Eğitim ara verilmiş olarak, başarı oranları CV'deki görev bağlamıyla aktarıldı; güncel görev durumları CV'yi yansıtır.
+
+GitHub kaynakları:
+
+- [Independent AI](https://github.com/MukeTR/independentai/blob/main/README.md)
+- [WorkspaceOS](https://github.com/MukeTR/Workspace-OS/blob/main/README.md)
+- [AccessAI / reachableai](https://github.com/MukeTR/reachableai/blob/main/README.md)
+- [Instagram Unfollowers](https://github.com/MukeTR/InstagramUnfollowers/blob/main/README.md): upstream üzerine geliştirilmiş Dipixel arayüzü/tasarımı/Türkçe sürümü; orijinal araç sahipliği iddia edilmez.
+
+Karmatik ve Kâr Hesaplayıcı önceki plandaki fikirlerdir. Boş `crm` reposu bir tamamlanmış ürün olarak sunulmadı. Dayflow bir fork olduğu için özgün proje vitrinine alınmadı. GitHub verisi build-time yerel içeriktir; ziyaretçi başına GitHub çağrısı veya token gerektirmez. Eski `/projects` placeholder vitrini bu katalogla değiştirilmiştir.

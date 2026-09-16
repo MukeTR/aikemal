@@ -1,0 +1,70 @@
+import { Link, useParams } from "react-router-dom";
+import { ArrowLeft, ArrowUpRight, Code2 } from "lucide-react";
+import { projects } from "@aikemal/shared";
+export function ProjectDetailPage() {
+  const { slug } = useParams();
+  const p = projects.find((x) => x.slug === slug);
+  if (!p)
+    return (
+      <section className="container page">
+        <p className="eyebrow">404 / ATÖLYEDE BULUNAMADI</p>
+        <h1>Bu repo başka bir evrende olabilir.</h1>
+        <Link className="button dark" to="/projects">
+          Atölyeye dön
+        </Link>
+      </section>
+    );
+  return (
+    <article className="container page project-detail">
+      <Link className="text-link" to="/projects">
+        <ArrowLeft size={16} /> Atölyeye dön
+      </Link>
+      <p className="eyebrow detail-category">
+        {p.category} /{" "}
+        {p.status === "planned" ? "FİKİR AŞAMASINDA" : "GITHUB PROJESİ"}
+      </p>
+      <h1>{p.name}</h1>
+      <p className="detail-lead">{p.description}</p>
+      <div className="tags">
+        {p.tags.map((t) => (
+          <span key={t}>{t}</span>
+        ))}
+      </div>
+      <div className="case-layout">
+        <div className="case-main">
+          <section>
+            <p className="eyebrow">01 / MESELE</p>
+            <h2>Neye takıldık?</h2>
+            <p>{p.problem}</p>
+          </section>
+          <section>
+            <p className="eyebrow">02 / YAKLAŞIM</p>
+            <h2>Nasıl ele aldık?</h2>
+            <p>{p.approach}</p>
+          </section>
+        </div>
+        <aside className="case-note">
+          <p className="eyebrow">PROJE NOTU</p>
+          <p>{p.scope}</p>
+          {p.credit && <p className="credit">{p.credit}</p>}
+          {p.github && (
+            <a
+              className="button dark"
+              href={p.github}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Code2 size={16} /> Repoyu incele <ArrowUpRight size={16} />
+            </a>
+          )}
+        </aside>
+      </div>
+      <div className="small-cta">
+        <h2>Başka bir problem, benzer bir merak?</h2>
+        <Link to="/ask" className="text-link">
+          Birlikte düşünelim <ArrowUpRight size={18} />
+        </Link>
+      </div>
+    </article>
+  );
+}
