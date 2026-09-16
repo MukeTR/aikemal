@@ -210,6 +210,16 @@ export function AboutPage() {
               <h3>{e.company}</h3>
               <h4>{e.role}</h4>
               <p>{e.text}</p>
+              {e.highlights && (
+                <div className="experience-highlights">
+                  {e.highlights.map((highlight) => (
+                    <span key={highlight.label}>
+                      <strong>{highlight.value}</strong>
+                      {highlight.label}
+                    </span>
+                  ))}
+                </div>
+              )}
               <div className="tags">
                 {e.tags.map((t) => (
                   <span key={t}>{t}</span>
