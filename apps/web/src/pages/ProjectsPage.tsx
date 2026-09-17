@@ -9,6 +9,7 @@ const filters = [
   "DİJİTAL ÜRÜN",
   "MİNİ ARAÇ",
   "E-TİCARET",
+  "BÜYÜME & PERFORMANS",
 ];
 export function ProjectsPage() {
   const { projects } = useProjects();

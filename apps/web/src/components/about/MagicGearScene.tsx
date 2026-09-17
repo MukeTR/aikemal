@@ -50,6 +50,12 @@ function Gear({ cx, cy, radius, teeth, className, code, label }: GearProps) {
   );
 }
 
+const telemetryDate = new Date().toLocaleDateString("en-US", {
+  month: "2-digit",
+  day: "2-digit",
+  year: "2-digit",
+});
+
 export function MagicGearScene({ locale = "tr" }: { locale?: "tr" | "en" }) {
   const english = locale === "en";
   return (
@@ -80,7 +86,9 @@ export function MagicGearScene({ locale = "tr" }: { locale?: "tr" | "en" }) {
       >
         <div className="console-header">
           <span>AK://MECHANICAL_FLOW</span>
-          <span className="console-clock">LIVE TELEMETRY · 09.17.26</span>
+          <span className="console-clock">
+            LIVE TELEMETRY · {telemetryDate.replaceAll("/", ".")}
+          </span>
         </div>
         <div className="machine-status machine-status--jammed">
           <span /> FAULT · TORQUE LIMIT

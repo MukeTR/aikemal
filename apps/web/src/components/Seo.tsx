@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { projects } from "@aikemal/shared";
+import { projects as builtInProjects, type Project } from "@aikemal/shared";
+import { useProjects } from "../lib/projectStore";
 
 const origin = "https://aikemal.com";
 const defaultImage = `${origin}/images/ai-kemal-watercolor-eyes.webp`;
@@ -87,7 +88,7 @@ const pageMeta: Record<string, PageMeta> = {
       inLanguage: "tr-TR",
       mainEntity: {
         "@type": "ItemList",
-        itemListElement: projects
+        itemListElement: builtInProjects
           .filter((project) => project.status !== "planned")
           .map((project, index) => ({
             "@type": "ListItem",
@@ -146,14 +147,20 @@ function setMeta(selector: string, attribute: string, value: string) {
   let element = document.head.querySelector<HTMLMetaElement>(selector);
   if (!element) {
     element = document.createElement("meta");
-    const [name, key] = attribute.split(":");
-    element.setAttribute(name, key);
+    const separator = attribute.indexOf(":");
+    element.setAttribute(
+      attribute.slice(0, separator),
+      attribute.slice(separator + 1),
+    );
     document.head.appendChild(element);
   }
   element.content = value;
 }
 
-function projectMeta(pathname: string): PageMeta | undefined {
+function projectMeta(
+  pathname: string,
+  projects: Project[],
+): PageMeta | undefined {
   if (!pathname.startsWith("/projects/")) return undefined;
   const slug = pathname.split("/")[2];
   const project = projects.find((item) => item.slug === slug);
@@ -179,9 +186,10 @@ function projectMeta(pathname: string): PageMeta | undefined {
 
 export function Seo() {
   const { pathname } = useLocation();
+  const { projects } = useProjects();
 
   useEffect(() => {
-    const meta = projectMeta(pathname) ?? pageMeta[pathname];
+    const meta = projectMeta(pathname, projects) ?? pageMeta[pathname];
     const resolved: PageMeta = meta ?? {
       title: "Sayfa bulunamadı — AI Kemal",
       description: "Aradığın sayfa AI Kemal’in atölyesinde bulunamadı.",
@@ -258,7 +266,7 @@ export function Seo() {
       });
       document.head.appendChild(script);
     }
-  }, [pathname]);
+  }, [pathname, projects]);
 
   return null;
 }

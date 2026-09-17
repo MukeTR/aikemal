@@ -77,7 +77,6 @@ export function Layout() {
         <a href="https://github.com/MukeTR" target="_blank" rel="noreferrer">
           GitHub ↗
         </a>
-        {!isEnglish && <Link to="/admin">Yönetim</Link>}
         <span>© {new Date().getFullYear()} AI Kemal</span>
         <a
           href="#main"

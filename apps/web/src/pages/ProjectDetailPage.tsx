@@ -62,7 +62,8 @@ export function ProjectDetailPage() {
               target="_blank"
               rel="noreferrer"
             >
-              Kârmatik’i aç <ArrowUpRight size={16} />
+              {p.slug === "karmatik" ? "Kârmatik’i aç" : "Aracı aç"}{" "}
+              <ArrowUpRight size={16} />
             </a>
           )}
           {p.github && (

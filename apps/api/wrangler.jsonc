@@ -5,6 +5,7 @@
   "compatibility_date": "2026-09-01",
   "env": {
     "preview": {
+      "name": "aikemal-preview",
       "assets": {
         "directory": "../web/dist",
         "binding": "ASSETS",
@@ -13,6 +14,8 @@
       },
     },
     "production": {
+      "name": "aikemal",
+      "routes": [{ "pattern": "aikemal.com", "custom_domain": true }],
       "assets": {
         "directory": "../web/dist",
         "binding": "ASSETS",

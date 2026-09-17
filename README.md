@@ -27,7 +27,7 @@ npm run preview   # build + gerçek Workers runtime üzerinde SPA/API (8787)
 apps/web/                  React + Vite + React Router
   src/components/          Layout, ProjectCard gibi tekrar kullanılabilir parçalar
   src/pages/               HomePage, AskPage, ProjectsPage
-  src/lib/                 API istemcisi, isteğe bağlı Supabase istemcisi
+  src/lib/                 Yerel proje deposu (localStorage), isteğe bağlı Supabase istemcisi
 apps/api/                  Hono API, Cloudflare Workers üzerinde
 packages/shared/           İstek/yanıt tipleri ve başlangıç proje verisi
 supabase/migrations/       RLS etkin ilk projects tablosu
@@ -39,11 +39,11 @@ Web → aynı origin `/api/*` → Worker → ileride Supabase / LLM. Production 
 
 - `/`: hero, AI Kemal nedir, proje placeholder'ları, sohbet CTA, footer.
 - `/projects`: GitHub projeleri ve planlanan araçlar; kategori filtresi ve detay sayfaları.
-- `/ask`: boş/gönderiliyor/başarılı/hata durumları olan mock sohbet formu.
+- `/ask`: problemi üç adımda yapılandırılmış bir brief'e dönüştüren form. Brief cihaz dışına gönderilmez; kopyalanabilir.
 - Diğer UI yolları: 404 ekranı.
 - `GET /api/health`: mock modu ve Supabase yapılandırmasının varlığı. Bağlantı testi değildir.
 - `GET /api/projects`: ortak paketten proje kataloğu.
-- `POST /api/chat`: `{ "message": "Merhaba" }` → `{ "mode": "mock", "reply": "..." }`.
+- `POST /api/chat`: `{ "message": "Merhaba" }` → `{ "mode": "mock", "reply": "..." }`. Arayüz şu anda bu endpoint'i çağırmıyor; gelecekteki sohbet özelliği için sözleşme olarak duruyor.
 
 Chat JSON gerektirir; 1–1000 karakter mesaj ve 8 KiB istek sınırı vardır. Yanıt sabit bir örnektir. Mesajlar loglanmaz veya saklanmaz. Gerçek LLM, kimlik doğrulama, konuşma hafızası ve rate limiting henüz eklenmedi.
 
@@ -67,11 +67,11 @@ Migration'ı Supabase SQL Editor ile çalıştırabilir veya Supabase CLI kurulu
 
 ## Sayfa sayfa geliştirme
 
-Yeni ekranı `apps/web/src/pages/` altına ekle ve `App.tsx` içinde route tanımla. Ortak navigasyon/footer `Layout` içinde kalır. Tekrar eden parçaları `components/`, API çağrılarını `lib/`, ortak sözleşmeleri `packages/shared/` içine koy. Yeni veri tablolarını ayrı migration dosyalarıyla ve RLS politikalarıyla ekle.
+Yeni ekranı `apps/web/src/pages/` altına ekle ve `App.tsx` içinde route tanımla. Ortak navigasyon/footer `Layout` içinde kalır. Tekrar eden parçaları `components/`, veri katmanını `lib/`, ortak sözleşmeleri `packages/shared/` içine koy. Yeni veri tablolarını ayrı migration dosyalarıyla ve RLS politikalarıyla ekle.
 
 ## Daha sonra yayınlama
 
-Bu repo yalnızca lokalde hazırlanmıştır; domain/DNS veya hesaplarda değişiklik yapılmadı.
+Kaynak kod: https://github.com/MukeTR/aikemal · Canlı site: https://aikemal.com
 
 ```sh
 npx wrangler login
@@ -79,7 +79,7 @@ npm run check
 npm run deploy
 ```
 
-Deploy komutu frontend'i build edip `production` ortamına Worker + statik dosyaları birlikte gönderir. Wrangler girişini, hesap seçimini ve domain bağlantısını kendi hesabında yap. `aikemal.com` custom domain'i daha sonra Cloudflare dashboard üzerinden eklenebilir. SPA fallback `/ask` gibi derin bağlantıları destekler; `/api` ve `/api/*` her zaman Worker'a gider ve hatalı API yolları HTML yerine JSON 404 döndürür. Gerekirse production Worker env değerlerini Cloudflare dashboard veya `wrangler secret put ... --env production` ile ekle. Vite env değerleri ise build anında sağlanır.
+Deploy komutu frontend'i build edip `production` ortamına Worker + statik dosyaları birlikte gönderir. Production Worker adı `aikemal`; `aikemal.com` custom domain'i `wrangler.jsonc` içindeki `routes` ile bağlanır. `www.aikemal.com` için Cloudflare dashboard'da tek bir Redirect Rule (301 → https://aikemal.com) yeterlidir. SPA fallback `/ask` gibi derin bağlantıları destekler; `/api` ve `/api/*` her zaman Worker'a gider ve hatalı API yolları HTML yerine JSON 404 döndürür. Gerekirse production Worker env değerlerini Cloudflare dashboard veya `wrangler secret put ... --env production` ile ekle. Vite env değerleri ise build anında sağlanır.
 
 ## Free tier yaklaşımı
 
@@ -95,7 +95,7 @@ Google Fonts üzerinden Manrope ve DM Sans yüklenir; ağ yoksa yerel sans-serif
 - `/expertise`: Claude, ChatGPT, CRM/otomasyon, Meta reklamları, ürün mimarisi ve web araştırması/veri çıkarımı çalışma alanları; bölüm bağlantıları.
 - `/projects`: URL parametresiyle korunabilen kategori filtreleri, seçili proje vitrini ve public/özel çalışmaları ayıran çözüm arşivi.
 - `/projects/:slug`: problem, yaklaşım, kapsam, kaynak repo ve gerektiğinde katkı atfı.
-- `/admin`: proje ekleme, düzenleme, vitrinden kaldırma ve geri yükleme paneli. Bu ilk lokal sürüm değişiklikleri tarayıcının `localStorage` alanında saklar; Supabase Auth/veritabanı bağlandığında aynı veri katmanı kalıcı yönetime taşınacaktır.
+- `/admin`: proje ekleme, düzenleme, vitrinden kaldırma ve geri yükleme paneli. Menüde link yoktur; doğrudan URL ile açılır. Bu ilk lokal sürüm değişiklikleri tarayıcının `localStorage` alanında saklar; Supabase Auth/veritabanı bağlandığında aynı veri katmanı kalıcı yönetime taşınacaktır.
 - Ana sayfa: sarıya yakın vurgu rengi, bölüm navigasyonu, uzmanlık kartları, seçilmiş projeler, açılır çalışma adımları ve yıldızdaki küçük mizahi etkileşim.
 
 İçerik kaynakları: kullanıcının sağladığı CV, güncel LinkedIn deneyim ekran görüntüsü ve 17 Eylül 2026 tarihinde incelenen GitHub repo/README'leri. Kariyer verileri `apps/web/src/content/profile.ts`, uzmanlık metinleri `apps/web/src/content/expertise.ts`, proje kataloğu `packages/shared/src/index.ts` içinde tutulur. CV'nin ve ekran görüntüsünün kendisi, telefon ve e-posta repo/public dizinine eklenmedi. Formal eğitim listelenmez; BilgeAdam dönemi kişisel hikâyedeki biçimlendirici teknik deneyim olarak anlatılır. Başarı oranları CV'deki görev bağlamıyla aktarıldı. Kârmatik, Dipixel Media ve Independent AI rolleri kullanıcının paylaştığı güncel deneyim bilgilerini yansıtır.

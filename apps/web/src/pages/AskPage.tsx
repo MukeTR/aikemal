@@ -108,9 +108,13 @@ export function AskPage() {
   }
 
   async function copySummary() {
-    await navigator.clipboard.writeText(summary);
-    setCopied(true);
-    window.setTimeout(() => setCopied(false), 1800);
+    try {
+      await navigator.clipboard.writeText(summary);
+      setCopied(true);
+      window.setTimeout(() => setCopied(false), 1800);
+    } catch {
+      window.prompt("Brief’i buradan kopyalayabilirsin:", summary);
+    }
   }
 
   function restart() {
