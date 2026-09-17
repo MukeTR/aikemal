@@ -26,7 +26,7 @@ export const experience = [
     company: "Melontik",
     role: "Sales & CRM Manager",
     period: "2025 — Haziran 2026",
-    text: "Müşteri sayısını yaklaşık 300’den 1.500’e taşıdım. CRM altyapısı, segmentasyon ve lead scoring modellerinin yanında paket kurguları, fiyatlandırma, ödeme akışları, kampanya çalışmaları ve Gleap gibi sistem entegrasyonları üzerinde çalıştım. Lead’den aktivasyon, dönüşüm ve elde tutmaya uzanan e-posta, WhatsApp ve CRM otomasyonlarını kurdum.",
+    text: "Roketfy’de başlayan yoğun telefon trafiği burada da devam etti; satıcıları dinleyerek topladığım saha bilgisini satış ve ürün süreçlerine taşıdım. Müşteri sayısını yaklaşık 300’den 1.500’e çıkarırken CRM altyapısı, segmentasyon ve lead scoring modellerinin yanında paket kurguları, fiyatlandırma, ödeme akışları, kampanya çalışmaları ve Gleap gibi sistem entegrasyonları üzerinde çalıştım. Lead’den aktivasyon, dönüşüm ve elde tutmaya uzanan e-posta, WhatsApp ve CRM otomasyonlarını kurdum.",
     tags: [
       "CRM altyapısı",
       "Lead scoring",
@@ -43,7 +43,7 @@ export const experience = [
     company: "Roketfy",
     role: "Sales & Customer Success Team Lead",
     period: "Şubat 2023 — 2025",
-    text: "Roketfy’a katıldığımda yaklaşık 30 olan müşteri sayısını, ayrıldığım dönemde 500’e taşıdım. Müşteri başarı ekibi ve satış süreçlerinin yanında onboarding, paketler, ödeme akışları, fiyatlandırma, kampanyalar ve Gleap gibi sistem entegrasyonları üzerinde çalıştım. Ayrıca döneminin erken uçtan uca AI destekli print-on-demand ürünlerinden POD AI’ın Project Manager’ıydım. Ürün ve üretici seçiminden AI tasarım üretimine, varyant mockup’larından SEO uyumlu içeriğe ve Printify üzerinden mağazaya taslak göndermeye uzanan ürün akışını yönettim.",
+    text: "Roketfy’a telesatış rolüyle başladım; günde en az 50 satıcıyla konuşarak ihtiyaçlarını, itirazlarını ve tekrar eden problemlerini doğrudan sahada öğrendim. Katıldığımda yaklaşık 30 olan müşteri sayısını, ayrıldığım dönemde 500’e taşıdım. Müşteri başarı ekibi ve satış süreçlerinin yanında onboarding, paketler, ödeme akışları, fiyatlandırma, kampanyalar ve Gleap gibi sistem entegrasyonları üzerinde çalıştım. Ayrıca döneminin erken uçtan uca AI destekli print-on-demand ürünlerinden POD AI’ın Project Manager’ıydım. Ürün ve üretici seçiminden AI tasarım üretimine, varyant mockup’larından SEO uyumlu içeriğe ve Printify üzerinden mağazaya taslak göndermeye uzanan ürün akışını yönettim.",
     tags: [
       "SaaS",
       "Onboarding",
@@ -54,6 +54,7 @@ export const experience = [
       "Product Management",
     ],
     highlights: [
+      { value: "50+", label: "günlük satıcı görüşmesi" },
       { value: "30 → 500", label: "müşteri" },
       { value: ">16×", label: "müşteri ölçeği" },
       { value: "POD AI", label: "Project Manager" },
@@ -77,7 +78,7 @@ export const experience = [
     company: "Turkcell",
     role: "Customer Experience Specialist",
     period: "Ağustos 2016 — Şubat 2022",
-    text: "Yoğun müşteri etkileşimleri ve elde tutma süreçleri. Müşteri memnuniyeti, kalite performansı ve CRM iyileştirmeleriyle müşteri davranışını sahada öğrenme dönemi.",
+    text: "Yoğun müşteri etkileşimleri ve elde tutma süreçlerinde, öfkenin arkasındaki gerçek ihtiyacı dinlemeyi öğrendim. Fazla gelen faturası yüzünden telefonunu bana fırlatan bir müşteriyi sakinleştirip problemini çözdüğüm, ardından ihtiyacına uygun yeni telefonla 24 ay daha şirkette kalmasını sağladığım gün; empatiyle satışın aynı masada oturabildiğini gördüm. Müşteri memnuniyeti, kalite performansı ve CRM iyileştirmeleriyle müşteri davranışını sahada öğrendiğim dönemdi.",
     tags: ["Müşteri deneyimi", "Retention", "CRM"],
   },
 ];

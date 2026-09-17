@@ -95,12 +95,11 @@ export function AboutPage() {
             sahiplenir, gereken şapkayı takar ve işi çalışan noktaya taşırım.
           </p>
           <p>
-            Turkcell’de müşteri davranışını ve elde tutmanın önemini sahada
-            öğrendim. Atam Güzellik’te reklam, lojistik, CRM ve ERP’nin aynı
-            operasyon içinde çalışmasını ele aldım. Roketfy’de satış ve müşteri
-            başarısı tarafında onboarding, aktivasyon ve büyüme süreçlerine
-            odaklandım. Melontik’te bu birikimi CRM altyapısı, segmentasyon ve
-            satış otomasyonlarıyla bir araya getirdim.
+            Bu refleks sunumlarda değil, insanlarla konuşurken oluştu.
+            Turkcell’de öfkeli müşterinin söylediğiyle asıl probleminin farklı
+            olabileceğini; Roketfy ve Melontik’te ise arka arkaya yüzlerce
+            satıcıyı dinlemenin, hiçbir dashboard’un tek başına gösteremeyeceği
+            örüntüleri ortaya çıkardığını öğrendim.
           </p>
           <p>
             Benim için yapay zekâ, bu birikimin günlük üretimdeki uzantısı.
@@ -138,6 +137,86 @@ export function AboutPage() {
           <Link className="text-link" to="/expertise">
             Nasıl çalıştığımı keşfet <ArrowUpRight size={17} />
           </Link>
+        </div>
+      </section>
+      <section
+        className="origin-stories section"
+        aria-label="Beni oluşturan hikâyeler"
+      >
+        <header>
+          <p className="eyebrow">BENİ YAPAN SAHNELER / CV’YE SIĞMAYANLAR</p>
+          <h2>
+            Önce dinledim.
+            <br />
+            Sonra sistemi kurdum.
+          </h2>
+          <p>
+            Bugün bir ürüne, müşteriye ya da probleme nasıl baktığımı üç unvan
+            değil; bu üç sahne daha iyi anlatıyor.
+          </p>
+        </header>
+        <div className="origin-story-list">
+          <article className="origin-story">
+            <span className="origin-story-number">01</span>
+            <div>
+              <p className="eyebrow">MERAK / KAYNAK YOKSA KAYNAĞI BUL</p>
+              <h3>Oyun alamıyorduk. Ben de Portekizce öğrendim sayılır.</h3>
+              <p>
+                Eve gelen ilk iPhone 4’ü jailbreak yaparak başlayan merakım, 14
+                yaşında hediye edilen PlayStation 3’le başka bir seviyeye çıktı.
+                Oyun alacak bütçemiz yoktu; Türkçe kaynak da neredeyse yoktu.
+                Brezilya merkezli bir sitedeki anlatımı sözlükler ve Google
+                Translate yardımıyla sayfa sayfa çözüp cihazı jailbreak yapmayı
+                öğrendim.
+              </p>
+              <p>
+                Sonra bu beceriyle Yazıcıoğlu İş Hanı’ndaki Koçer Elektronik’in
+                kapısını çaldım ve o yaşta işe girdim. Bugün “hangi taşı
+                kaldıracağını bilmek” dediğim araştırma refleksinin ilk ciddi
+                örneklerinden biri buydu.
+              </p>
+            </div>
+          </article>
+          <article className="origin-story">
+            <span className="origin-story-number">02</span>
+            <div>
+              <p className="eyebrow">TURKCELL / PROBLEM KİŞİ DEĞİLDİ</p>
+              <h3>Kafama telefon fırlattı. Iskaladı. Ben faturaya baktım.</h3>
+              <p>
+                Beklemediğim bir satış başarısını, satış yapmaya çalışarak elde
+                etmedim. Fazla gelen faturasına öfkelenen bir müşteri telefonu
+                bana fırlattı. Sakin biçimde karşıladım, masaya davet ettim,
+                kahve ikram ettim ve faturayı birlikte inceledik. Çünkü o anda
+                müşterinin problemi ben değildim; çözemediği faturasıydı.
+              </p>
+              <p>
+                Telefonu da kırılmıştı. İhtiyacını doğru anladıktan sonra 24 ay
+                taksitle yeni bir telefon alarak ayrıldı ve 24 ay daha şirkette
+                kaldı. Bana kalan esas sonuç satış değildi: İnsan sakinleşmeden
+                çözümü, gerçekten dinlemeden de ihtiyacı göremiyorsun.
+              </p>
+            </div>
+          </article>
+          <article className="origin-story">
+            <span className="origin-story-number">03</span>
+            <div>
+              <p className="eyebrow">ROKETFY → MELONTİK / SAHADAN ÜRÜNE</p>
+              <h3>Günde en az 50 konuşma. Geceleri aynı soru.</h3>
+              <p>
+                Roketfy’a telesatış rolüyle girdim. Her gün en az 50 satıcıyla
+                telefonda konuşuyor, çok dinliyor ve çok not alıyordum. Bu tempo
+                Melontik’te de devam etti. Akşam yatağa yattığımda insanların
+                neden aynı noktalarda takıldığını düşünüyordum.
+              </p>
+              <p>
+                O konuşmalar zamanla satış cümlelerinden onboarding’e, CRM
+                akışlarına, paketlere, fiyatlandırmaya ve ürün kararlarına
+                dönüştü. Bugün yaptığım yazılımlarda saha hissinin güçlü
+                olmasının nedeni bu: Problemleri toplantı odasında tahmin
+                etmedim; sahiplerinden defalarca dinledim.
+              </p>
+            </div>
+          </article>
         </div>
       </section>
       <aside className="impossible-manifesto">

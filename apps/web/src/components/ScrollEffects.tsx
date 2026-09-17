@@ -19,6 +19,8 @@ const pageGroups: Record<string, RevealGroup[]> = {
   about: [
     [".about-hero > *", ["liquid-left", "liquid-scale"]],
     [".bio-section > *", ["text-unfold", "slide-right"]],
+    [".origin-stories > header > *", ["text-unfold", "slide-right"]],
+    [".origin-story", ["slide-left", "scale", "slide-right"]],
     [
       ".impossible-manifesto > *",
       ["counter-pop", "text-unfold", "slide-right"],

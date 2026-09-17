@@ -1755,6 +1755,90 @@ a.solution-row:hover strong {
   background: #f1eedc;
   border-left: 3px solid #d2bf57;
 }
+.origin-stories {
+  display: grid;
+  grid-template-columns: 0.58fr 1.42fr;
+  gap: 70px;
+  border-top: 1px solid var(--line);
+}
+.origin-stories > header {
+  align-self: start;
+  position: sticky;
+  top: 110px;
+}
+.origin-stories > header h2 {
+  margin-block: 24px 18px;
+  font-size: clamp(34px, 4vw, 57px);
+  line-height: 1.02;
+  letter-spacing: -2.8px;
+}
+.origin-stories > header > p:last-child {
+  max-width: 360px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.85;
+}
+.origin-story-list {
+  display: grid;
+  gap: 14px;
+}
+.origin-story {
+  position: relative;
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 24px;
+  overflow: hidden;
+  padding: 34px;
+  border: 1px solid rgb(42 40 28 / 12%);
+  border-radius: 12px;
+  background: #efecdf;
+}
+.origin-story:nth-child(2) {
+  background:
+    radial-gradient(circle at 92% 10%, rgb(242 226 91 / 18%), transparent 28%),
+    #20221c;
+  color: #fffced;
+}
+.origin-story:nth-child(3) {
+  background: #e9dc79;
+}
+.origin-story-number {
+  font-family: Manrope, sans-serif;
+  color: rgb(61 57 37 / 27%);
+  font-size: 47px;
+  font-weight: 500;
+  letter-spacing: -3px;
+  line-height: 0.85;
+}
+.origin-story:nth-child(2) .origin-story-number {
+  color: rgb(255 252 237 / 23%);
+}
+.origin-story .eyebrow {
+  margin-bottom: 18px;
+}
+.origin-story:nth-child(2) .eyebrow {
+  color: #eee267;
+}
+.origin-story h3 {
+  max-width: 650px;
+  margin-bottom: 18px;
+  font-size: clamp(23px, 2.5vw, 36px);
+  line-height: 1.12;
+  letter-spacing: -1.5px;
+}
+.origin-story p:not(.eyebrow) {
+  max-width: 680px;
+  margin-bottom: 12px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.9;
+}
+.origin-story:nth-child(2) p:not(.eyebrow) {
+  color: rgb(255 252 237 / 66%);
+}
+.origin-story:nth-child(3) p:not(.eyebrow) {
+  color: #625b35;
+}
 .outcomes-section {
   padding-block: 45px;
   border-bottom: 1px solid var(--line);
@@ -2009,6 +2093,7 @@ a.solution-row:hover strong {
   .case-layout,
   .about-hero,
   .bio-section,
+  .origin-stories,
   .career-section {
     grid-template-columns: 1fr;
     gap: 28px;
@@ -2054,6 +2139,17 @@ a.solution-row:hover strong {
   .bio-section {
     margin-top: 40px;
     gap: 10px;
+  }
+  .origin-stories > header {
+    position: static;
+  }
+  .origin-story {
+    grid-template-columns: 50px 1fr;
+    gap: 16px;
+    padding: 25px 22px;
+  }
+  .origin-story-number {
+    font-size: 34px;
   }
   .outcomes-grid {
     grid-template-columns: 1fr;
