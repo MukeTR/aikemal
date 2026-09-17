@@ -35,8 +35,8 @@ const stepsEn = [
     note: "Tab count is not a success metric. I keep reminding myself.",
   },
   {
-    title: "See the first working version.",
-    body: "I reduce the idea to something small and testable, inspect AI output, test the flow and fix what does not hold.",
+    title: "Get to the first working version.",
+    body: "I reduce the idea to something small and testable, inspect the AI output, test the flow and fix what breaks.",
     note: "‘Works on my machine’ is a beginning. It should work elsewhere too.",
   },
   {
@@ -62,7 +62,7 @@ export function ApproachSection({ locale = "tr" }: { locale?: "tr" | "en" }) {
         </h2>
         <p className="section-intro">
           {english
-            ? "Keep the humour in place and the work moving. That is the loop."
+            ? "Keep the humour. Keep the work moving. That is the loop."
             : "Mizah yerinde kalsın, iş de yolunda gitsin. Benim üretim döngüm bu kadar."}
         </p>
         <Link to={english ? "/en/ask" : "/ask"} className="text-link">

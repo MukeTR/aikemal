@@ -12,7 +12,7 @@ const englishCopy: Record<
   },
   chatgpt: {
     name: "ChatGPT",
-    line: "Speed for thought. Continuity for the work.",
+    line: "Faster thinking. Steadier execution.",
     label: "RESEARCH & PRODUCTION",
   },
   crm: {
@@ -32,7 +32,7 @@ const englishCopy: Record<
   },
   architecture: {
     name: "Product architecture",
-    line: "The same stack does not suit every product.",
+    line: "The same stack does not fit every product.",
     label: "MINIMUM COST × MAXIMUM OUTPUT",
   },
   research: {
@@ -73,7 +73,7 @@ export function ExpertiseSection({ locale = "tr" }: { locale?: "tr" | "en" }) {
       </div>
       <p className="section-intro">
         {english
-          ? "Claude, ChatGPT, competitor analysis, web research, data extraction, CRM, product architecture and 8 actively managed Meta accounts… All parts of the same habit: build from zero, measure the cost, make it work."
+          ? "Claude, ChatGPT, competitor analysis, web research, data extraction, CRM, product architecture and 8 actively managed Meta accounts… They all belong to the same habit: build from scratch, measure the cost and make it work."
           : "Claude, ChatGPT, rakip analizi, web araştırması, veri çıkarımı, CRM, ürün mimarisi ve aktif yönettiğim 8 Meta hesabı… Hepsi sıfırdan ürün kuran, maliyeti ölçen aynı üretim alışkanlığının parçaları."}
       </p>
       <div className="expertise-grid">

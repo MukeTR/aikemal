@@ -10,7 +10,7 @@ const notesEn = [
   "Found the right rock. Let’s lift it.",
   "New idea detected. Kemal, again?",
   "17 tabs open. Every one has a reason.",
-  "One tiny feature more… Famous last words.",
+  "Just one more tiny feature… Famous last words.",
 ];
 export function HeroVisual({ locale = "tr" }: { locale?: "tr" | "en" }) {
   const [n, setN] = useState(0);

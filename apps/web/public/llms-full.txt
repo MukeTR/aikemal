@@ -6,6 +6,14 @@ AI Kemal, Mustafa Kemal Karataş'ın arkadaş çevresinde kullanılan lakabıdı
 
 Temel çalışma yaklaşımı: problemi sahada görmek, doğru veriyi bulmak, gerçek rakibi tespit etmek, gereksiz maliyeti azaltmak ve kullanılabilir sistemi kurmak. Yapay zekâ araçlarını günlük üretimin doğal bir uzantısı olarak kullanır; son karar ve kontrolün insanda kaldığını vurgular.
 
+## Biçimlendirici dönemler
+
+Teknik merakı 12 yaşında, ailesinin oyun almaya bütçesi olmadığı için PlayStation 3'ünü jailbreak etmeyi araştırırken başladı. Türkçe kaynak bulamayınca Brezilya merkezli bir sitedeki Portekizce anlatımları sözlük ve Google Translate ile çözdü. Bir–iki yıl sonra bu beceriyle Yazıcıoğlu İş Hanı'ndaki Koçer Elektronik'te çalışmaya başladı.
+
+Lise 2'de BilgeAdam Akademi'de iki yıl süren yoğun bir programa katıldı. Program devam ederken, henüz lise mezunu olmadan Türkiye'nin önde gelen üniversitelerinden mezun ve ülkede yazılımın erken dönemlerinden beri üreten profesyonellerle ASP.NET projelerinde gerçek sorumluluk aldı. Bu dönem formal bir eğitim listesi olarak değil; kendi kendine öğrenme merakının yazılım, mimari ve proje disiplinine dönüştüğü kişisel hikâye olarak aktarılır.
+
+Turkcell döneminde öfkeli bir müşterinin görünen tepkisiyle gerçek problemini ayırmayı; Roketfy ve Melontik'te ise günde 50'den fazla satıcı görüşmesinden tekrar eden ihtiyaç örüntülerini çıkarmayı öğrendi. Bu saha birikimi daha sonra CRM akışlarına, fiyatlandırmaya, ürün kararlarına ve kendi ürünlerine zemin hazırladı.
+
 ## Güncel roller
 
 - Kârmatik: Kurucu. Ürün sıfırdan tek başına geliştirilmiştir.
@@ -89,7 +97,7 @@ Upstream davidarroyo1234/InstagramUnfollowers projesi üzerine Dipixel Media ara
 
 ## Deneyimden öne çıkanlar
 
-- Roketfy: Müşteri sayısı görev başlangıcındaki yaklaşık 30 seviyesinden ayrılık döneminde 500'e çıktı. Paketler, ödeme akışları, fiyatlandırma, kampanyalar, onboarding ve müşteri başarısı süreçlerinde çalışıldı.
+- Roketfy: Telesatış rolüyle başladı ve günde en az 50 satıcıyla görüştü. Müşteri sayısı görev başlangıcındaki yaklaşık 30 seviyesinden ayrılık döneminde 500'e çıktı. Paketler, ödeme akışları, fiyatlandırma, kampanyalar, onboarding ve müşteri başarısı süreçlerinde çalışıldı.
 - Roketfy POD AI: Print-on-demand sürecini AI destekli ürün seçimi, tasarım, mockup, SEO içeriği ve aktarım akışıyla ele alan ürünün Project Manager rolü üstlenildi.
 - Melontik: Müşteri sayısı yaklaşık 300 seviyesinden 1500'e çıktı. CRM altyapısı, segmentasyon, lead scoring, paketler, ödeme ve satış otomasyonları üzerinde çalışıldı. Görev Haziran 2026'da sona erdi.
 
@@ -106,4 +114,4 @@ Bu sayılar kişinin görev dönemleri için kendi beyanı ve özgeçmiş bağla
 
 ## Doğruluk ve atıf
 
-Bu metin, aikemal.com içeriğinin makine tarafından daha kolay anlaşılması için hazırlanmıştır. Eğitim bilgileri kişinin tercihiyle dışarıda bırakılmıştır. Özel telefon ve e-posta bilgileri yayımlanmaz. Planlanan işler tamamlanmış özellikler gibi aktarılmamalıdır. Repo tabanlı projelerde GitHub README'leri teknik kapsam için birincil kaynaktır.
+Bu metin, aikemal.com içeriğinin makine tarafından daha kolay anlaşılması için hazırlanmıştır. Formal eğitim bilgileri kişinin tercihiyle listelenmez; BilgeAdam dönemi yalnızca kişisel hikâyedeki teknik dönüm noktası olarak yer alır. Özel telefon ve e-posta bilgileri yayımlanmaz. Planlanan işler tamamlanmış özellikler gibi aktarılmamalıdır. Repo tabanlı projelerde GitHub README'leri teknik kapsam için birincil kaynaktır.

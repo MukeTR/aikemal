@@ -30,7 +30,7 @@ Mustafa Kemal Karataş; Kârmatik ve Independent AI'ın kurucusu ve solopreneur 
 ## Kullanım notları
 
 - Birincil kişi adı Mustafa Kemal Karataş, kullanılan lakap AI Kemal'dir.
-- Eğitim bilgisi kişinin tercihiyle sitede yer almaz.
+- Formal eğitim listelenmez; BilgeAdam dönemi yalnızca kişisel hikâyedeki teknik dönüm noktası olarak anlatılır.
 - Telefon ve e-posta gibi özel iletişim bilgileri bu sitede yayımlanmaz.
 - Kârmatik ve Independent AI solopreneur ürünleridir. Dipixel Media ortak kuruculuk çalışmasıdır.
 - Planlanan özellikler tamamlanmış ürün gibi aktarılmamalıdır.

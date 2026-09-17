@@ -20,8 +20,8 @@ export function EnglishAskPage() {
         <p className="eyebrow">BRIEF ASSEMBLED / PATIENT WILL LIVE</p>
         <h1>Good. The vague idea now has edges.</h1>
         <p className="page-intro">
-          This local version does not send or store the brief yet. Your answers
-          stayed in the browser—which is polite, if not especially useful for
+          This version does not send or store the brief yet. Your answers stayed
+          in the browser—which is polite, if not especially useful for
           scheduling a meeting.
         </p>
         <div className="english-result-actions">

@@ -154,44 +154,58 @@ export function AboutPage() {
               <p className="eyebrow">MERAK / KAYNAK YOKSA KAYNAĞI BUL</p>
               <h3>Oyun alamıyorduk. Ben de Portekizce öğrendim sayılır.</h3>
               <p>
-                Eve gelen ilk iPhone 4’ü jailbreak yaparak başlayan merakım, 14
-                yaşında hediye edilen PlayStation 3’le başka bir seviyeye çıktı.
-                Oyun alacak bütçemiz yoktu; Türkçe kaynak da neredeyse yoktu.
-                Brezilya merkezli bir sitedeki anlatımı sözlükler ve Google
-                Translate yardımıyla sayfa sayfa çözüp cihazı jailbreak yapmayı
-                öğrendim.
+                12 yaşındayken babam bir PlayStation 3 hediye etti ama oyun
+                alacak bütçemiz yoktu. Türkçe kaynak da neredeyse yoktu.
+                Brezilya merkezli bir sitedeki Portekizce anlatımı sözlükler ve
+                Google Translate yardımıyla sayfa sayfa çözüp cihazı jailbreak
+                yapmayı öğrendim.
               </p>
               <p>
-                Sonra bu beceriyle Yazıcıoğlu İş Hanı’ndaki Koçer Elektronik’in
-                kapısını çaldım ve o yaşta işe girdim. Bugün “hangi taşı
+                Bir–iki yıl sonra bu beceriyle Yazıcıoğlu İş Hanı’ndaki Koçer
+                Elektronik’in kapısını çaldım ve işe girdim. Bugün “hangi taşı
                 kaldıracağını bilmek” dediğim araştırma refleksinin ilk ciddi
                 örneklerinden biri buydu.
               </p>
             </div>
           </article>
-          <article className="origin-story">
+          <article className="origin-story origin-story--academy">
             <span className="origin-story-number">02</span>
             <div>
               <p className="eyebrow">
                 BİLGEADAM / MERAKIN TEMELE DÖNÜŞTÜĞÜ YER
               </p>
-              <h3>Lise diploması yoktu. Masada doktoralı insanlar vardı.</h3>
+              <h3>
+                Lise diploması yoktu. Masada Türkiye’nin erken kuşak
+                yazılımcıları vardı.
+              </h3>
               <p>
-                Lise 2’de okuldan sonra hâlâ boş vaktim kalınca babam beni
-                BilgeAdam Akademi’ye gönderdi. İki yıl boyunca kurumun sunduğu
-                eğitimleri yoğun bir tempoda aldım. Merakla kendi kendime
-                açtığım teknik kapı, orada daha düzenli bir temele oturdu;
-                yazılımın yalnızca cihazları kurcalamak değil, sistem kurmak
-                olduğunu görmeye başladım.
+                Lise 2’de babam, okuldan arta kalan vaktimi değerlendirmem için
+                beni BilgeAdam Akademi’ye gönderdi. İki yıl süren yoğun program,
+                cihazları kendi başıma kurcalayarak edindiğim merakı yazılım,
+                mimari ve proje disipliniyle buluşturdu.
               </p>
               <p>
-                Daha lise mezunu bile değilken, aralarında doktoralı insanların
-                da bulunduğu ekiplerle ASP.NET projelerinde çalışmaya başladım.
-                Yaşım masadaki herkesten küçüktü ama gerçek bir projede
-                sorumluluk almanın yaşı olmadığını orada öğrendim. Bilmediğimi
-                hızla öğrenip üreten insanların arasına girmek, teknik
-                özgüvenimin temelini oluşturdu.
+                Program devam ederken sınıftan gerçek proje masasına geçtim.
+                Henüz lise mezunu değildim; buna rağmen Türkiye’nin önde gelen
+                üniversitelerinden mezun, ülkede yazılımın erken dönemlerinden
+                beri üreten profesyonellerle aynı ASP.NET projelerinde çalışıyor
+                ve gerçek sorumluluk alıyordum. Orada yaşın değil; problemi
+                anlayıp öğrenme hızının ve ürettiğin işin masada yer açtığını
+                gördüm.
               </p>
+              <div className="academy-console" aria-hidden="true">
+                <div className="academy-console-bar">
+                  <i /> <i /> <i />
+                  <span>bilgeadam / asp.net / build</span>
+                </div>
+                <code>
+                  <span>public class CuriosityController</span>
+                  <span>{"{"}</span>
+                  <span>&nbsp;&nbsp;learn(); build(); repeat();</span>
+                  <span>{"}"}</span>
+                </code>
+                <small>BUILD SUCCEEDED · BEFORE GRADUATION</small>
+              </div>
             </div>
           </article>
           <article className="origin-story">

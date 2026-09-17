@@ -4,9 +4,17 @@
 
 Mustafa Kemal is the founder and solopreneur builder of Kârmatik and Independent AI, and co-founder of Dipixel Media. He works across AI, SaaS, e-commerce, CRM, automation, competitive strategy, web research, data extraction and Meta advertising. Infrastructure and model choices are made around the real traffic, data, operating and cost constraints of each product.
 
+## Formative story
+
+Curiosity came before the job titles. At 12, Mustafa Kemal used dictionaries and Google Translate to work through Portuguese instructions on a Brazilian website and jailbreak the PlayStation 3 his family could not afford games for. One or two years later, that skill led to his first job at Koçer Elektronik in Istanbul's Yazıcıoğlu Business Centre.
+
+In his second year of high school, his father enrolled him at BilgeAdam Academy. During an intensive two-year programme, self-taught experimentation became software, architecture and project discipline. Before graduating from high school, he was already taking real responsibility on ASP.NET projects alongside graduates of some of Turkey's leading universities and members of the country's early generation of software professionals.
+
+The same pattern continued in customer-facing work: listen closely, find the real problem behind the visible complaint, recognise the pattern and turn it into a working system.
+
 ## Main pages
 
-- [English home](https://aikemal.com/en): English profile, expertise, selected ventures, working principles and technical repair animation.
+- [English home](https://aikemal.com/en): English profile, expertise, selected ventures and working principles.
 - [Think together](https://aikemal.com/en/ask): A short English diagnostic form for product, growth, automation, AI and research problems.
 - [Turkish home](https://aikemal.com/): The complete Turkish edition.
 - [Projects](https://aikemal.com/projects): The detailed project catalogue in Turkish.
@@ -36,4 +44,4 @@ Mustafa Kemal is the founder and solopreneur builder of Kârmatik and Independen
 - [Kârmatik](https://karmatik.io): The live Kârmatik product.
 - [Full context in Turkish](https://aikemal.com/llms-full.txt): Detailed identity, expertise, projects, experience and accuracy notes.
 
-Education is intentionally omitted from the public profile. Private phone and email details are not published. Planned features must not be described as completed. Kârmatik and Independent AI are solopreneur products; Dipixel Media is a co-founder role.
+Formal education is intentionally omitted from the public profile. BilgeAdam appears only as a formative technical chapter in the personal story. Private phone and email details are not published. Planned features must not be described as completed. Kârmatik and Independent AI are solopreneur products; Dipixel Media is a co-founder role.

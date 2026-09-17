@@ -38,7 +38,7 @@ export function HomePage({ locale = "tr" }: { locale?: "tr" | "en" }) {
           </h1>
           <p className="hero-description">
             {english
-              ? "Usually, it works. If it does not, I find out why. From research and data to infrastructure and launch, I sit at every product table."
+              ? "Usually, it works. If it does not, I find out why. From research and data to infrastructure and launch, I work across the whole product."
               : "Genellikle çalışır. Çalışmıyorsa nedenini de bulurum. Araştırmadan veriye, altyapıdan yayına kadar ürünün bütün masalarında ben varım."}
           </p>
           <div className="hero-actions">
@@ -107,9 +107,7 @@ export function HomePage({ locale = "tr" }: { locale?: "tr" | "en" }) {
             {english ? "Plenty of “what if?”" : "Bolca “ya şöyle yapsak?”"}
           </h2>
           <Link className="text-link" to={english ? "/en#about" : "/about"}>
-            {english
-              ? "The longer version of Kemal"
-              : "Kemal’in uzun versiyonu"}{" "}
+            {english ? "More about Kemal" : "Kemal’in uzun versiyonu"}{" "}
             <ArrowUpRight size={18} />
           </Link>
         </div>
@@ -139,9 +137,8 @@ export function HomePage({ locale = "tr" }: { locale?: "tr" | "en" }) {
                 quality and cost.
               </p>
               <p>
-                The workshop contains expertise, GitHub projects and ideas not
-                yet cleared from the bench. It is a little crowded. So is the
-                head.
+                Inside: expertise, GitHub projects and ideas still sitting on
+                the workbench. It is a little crowded. So is my head.
               </p>
             </>
           ) : (
@@ -294,7 +291,7 @@ export function HomePage({ locale = "tr" }: { locale?: "tr" | "en" }) {
               </p>
               <h2>
                 {english
-                  ? "An idea left. A product returned."
+                  ? "An idea went in. A product came out."
                   : "Fikir çıktı. Ürün oldu."}
               </h2>
             </div>
@@ -335,7 +332,7 @@ export function HomePage({ locale = "tr" }: { locale?: "tr" | "en" }) {
             </h2>
             <p>
               {english
-                ? "Good. One of my favourite sentences. Tell me a little; we will open the rest together."
+                ? "Good. One of my favourite sentences. Tell me a little; we will unpack the rest together."
                 : "Tamam, en sevdiğim cümle. Biraz anlat; gerisini birlikte açarız."}
             </p>
           </div>

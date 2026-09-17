@@ -115,7 +115,7 @@ const pageMeta: Record<string, PageMeta> = {
     noindex: true,
   },
   "/en": {
-    title: "AI Kemal — From curious question to working product",
+    title: "AI Kemal — From a curious question to a working product",
     description:
       "Mustafa Kemal Karataş builds AI products, SaaS systems and growth operations across e-commerce, CRM, research and automation.",
     schema: [
