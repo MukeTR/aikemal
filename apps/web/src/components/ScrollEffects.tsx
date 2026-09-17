@@ -26,8 +26,6 @@ const pageGroups: Record<string, RevealGroup[]> = {
       ["counter-pop", "text-unfold", "slide-right"],
     ],
     [".magic-gear-scene > *", ["slide-left", "liquid-scale"]],
-    [".solo-builder-section > *", ["tilt-left", "slide-right"]],
-    [".builder-principles article", ["float-up", "tilt-left", "tilt-right"]],
     [".current-work > *", ["slide-left", "slide-right"]],
     [".outcomes-grid article", ["counter-pop", "counter-pop", "counter-pop"]],
     [".career-section > *", ["text-unfold", "slide-right"]],
