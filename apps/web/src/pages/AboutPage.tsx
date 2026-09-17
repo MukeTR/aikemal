@@ -78,61 +78,53 @@ export function AboutPage() {
             Sistemleri iyileştirmek.
           </h2>
           <p>
-            Müşteri deneyiminden satışa, e-ticaretten SaaS’a uzanan yolculuğumda
-            hep aynı soruya döndüm: İnsanların işini nasıl kolaylaştırır, bunun
-            sonucunu nasıl ölçeriz?
+            Beni tek bir unvanla anlatmak zor. Satış yaptım, müşteri deneyimi
+            yönettim, CRM sistemleri kurdum, e-ticaret operasyonlarının içinde
+            çalıştım ve sıfırdan yazılımlar geliştirdim. Fakat bütün bu işlerin
+            altında değişmeyen tek bir refleks var: İnsanların yaşadığı problemi
+            dinlemek, tekrar eden örüntüyü görmek ve oraya çalışan bir sistem
+            yerleştirmek.
           </p>
           <p>
-            Empati benim için özgeçmişe yazılan bir özellik değil, çalışma
-            yöntemim. Karşı tarafı gerçekten dinler; söylediği cümlenin
-            arkasındaki ihtiyacı, sürtünmeyi ve bazen kendisinin bile henüz
-            adını koymadığı problemi anlamaya çalışırım. İyi ürünün ilk
-            prototipi çoğu zaman doğru dinlenmiş bir cümledir.
+            Ana yeteneğimin yalnızca yazılım, satış veya yapay zekâ olduğunu
+            düşünmüyorum. Ben problem örüntülerini görüyorum. Bir insanın
+            söylediği kadar söylemediğine, takıldığı ve sustuğu yere de dikkat
+            ediyorum. Çünkü iyi ürünün ilk prototipi çoğu zaman doğru dinlenmiş
+            bir cümledir.
           </p>
           <p>
-            Belirsizlik, az kaynak ve hızlı karar beni germiyor; startup
-            ortamında iştahım açılıyor. Kısacası startup canavarıyım: problemi
-            sahiplenir, gereken şapkayı takar ve işi çalışan noktaya taşırım.
+            Satış benim için birini ikna etme yarışı değil; ihtiyacın doğru
+            teşhis edilmesidir. Turkcell’de öfkenin arkasındaki problemi,
+            Roketfy ve Melontik’te ise günde onlarca satıcının anlattığı ortak
+            sürtünmeleri dinledim. Zamanla bu konuşmalar onboarding akışlarına,
+            CRM sistemlerine, paketlere, fiyatlandırmaya ve ürün kararlarına
+            dönüştü.
           </p>
           <p>
-            Bu refleks sunumlarda değil, insanlarla konuşurken oluştu.
-            Turkcell’de öfkeli müşterinin söylediğiyle asıl probleminin farklı
-            olabileceğini; Roketfy ve Melontik’te ise arka arkaya yüzlerce
-            satıcıyı dinlemenin, hiçbir dashboard’un tek başına gösteremeyeceği
-            örüntüleri ortaya çıkardığını öğrendim.
+            Bu yüzden kurduğum ürünler, bir toplantıda aklıma gelen rastgele
+            fikirler değil. Freelance çalışmalardan Dipixel’e, e-ticaret
+            sahasından Kârmatik’e, markaların yeni görünürlük probleminden
+            Independent AI’a uzanan her yapının arkasında defalarca duyduğum,
+            araştırdığım ve bizzat temas ettiğim gerçek bir ihtiyaç var. Her
+            deneyim, bir sonrakinin zeminini hazırladı.
           </p>
           <p>
-            Benim için yapay zekâ, bu birikimin günlük üretimdeki uzantısı.
-            Claude’la bir problemi parçalara ayırıyor, ChatGPT’yle düşüncemi
-            geliştiriyor, doğru araçları birleştirip fikri çalışan bir şeye
-            dönüştürüyorum. Araçlar elim gibi; neyi neden yapacağımıza karar
-            veren hâlâ benim.
+            Yeni araçlardan çekinmiyorum. Bir model, program, dil veya teknoloji
+            karşıma çıktığında “Bunu biliyor muyum?” yerine “Çalışma mantığını
+            nereden çözerim?” diye düşünüyorum. Claude, ChatGPT, HubSpot, Adobe,
+            kod, scraping veya altyapı; araç değişiyor ama yöntem değişmiyor:
+            öğren, sistemi çöz ve problemi çalışır hâle getir.
           </p>
           <p>
-            İnternette bilginin nerede saklandığını, hangi kaynağın ne kadar
-            güvenilir olduğunu ve gerektiğinde verinin nasıl düzenli biçimde
-            çıkarılacağını iyi biliyorum. Araştırırken her taşın altına bakan
-            biri değilim; çocukluğumdan beri taşıdığım merak sayesinde hangi
-            taşı kaldırmam gerektiğini bilen biriyim.
-          </p>
-          <p>
-            Strateji kurarken önce oyun alanını doğru okurum. Rakibin kim
-            olduğunu varsaymak yerine; ürününü, teklifini, fiyatını,
-            kanallarını, müşteri deneyimini ve insanların onun yerine hangi
-            alternatifi seçtiğini incelerim. Çünkü yanlış rakibe karşı
-            hazırlanmış kusursuz plan da yanlış plandır.
-          </p>
-          <p>
-            Araç öğrenmek benim için ayrı bir iş değil, üretmenin doğal parçası.
-            Adobe ailesi ve Microsoft Office araçlarında ileri seviyedeyim;
-            HubSpot’un bütün çalışma alanlarına hâkimim. Müzikle uğraştığım
-            yıllarda FL Studio’yu, görsel üretimde DaVinci Resolve ve Sony
-            Vegas’ı öğrendim. Kısacası, içinde pil olan bir şeyle büyük
-            ihtimalle çalışmışımdır.
+            Beni klasik yazılımcıdan ayıran müşteriyi bilmem; klasik satışçıdan
+            ayıran sistemi kurabilmem; klasik pazarlamacıdan ayıran veriyi ve
+            altyapıyı okuyabilmem. Belirsizlik, az kaynak ve hızlı karar beni
+            germiyor. Startup ortamında iştahım açılıyor; gereken şapkayı takıp
+            işi çalışan noktaya taşımayı seviyorum.
           </p>
           <p className="bio-punchline">
-            Kısacası; müşteriyi, rakibi, veriyi ve sistemi aynı masada okuyorum.
-            Çünkü hepsi, işin nerede tıkandığını kendi dilinde söylüyor.
+            Mustafa Kemal, müşterinin söylediğini dinler; söylemediğini fark
+            eder. Sonra o problemi çözen sistemi kendi kurar.
           </p>
           <Link className="text-link" to="/expertise">
             Nasıl çalıştığımı keşfet <ArrowUpRight size={17} />
