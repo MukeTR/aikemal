@@ -82,7 +82,7 @@ const copy = {
       [
         "03",
         "Emeklilikte ne yapacaksın?",
-        "Kurcalamaya devam. Bu sefer deadline’sız. Belki bir PlayStation. Bu sefer oyunlarını alarak.",
+        "Amasyalıyım. Dedemden kalma bir tarla var; gidip ekip biçeceğim. Köpeğim Nova ile tarım sektörüne giriş yapıyoruz. Küçük bir not: Daha tarlayı görmeden aklıma otomatize edilmemiş bir sürü problem takıldı. Sulama takvimi, hasat tahmini, Nova’nın devriye rotası… Emeklilik böyle bir şey değil herhalde.",
       ],
     ],
     doneEyebrow: "SAYAÇ BİTTİ",
@@ -138,7 +138,7 @@ const copy = {
       [
         "03",
         "What will you do?",
-        "Keep tinkering. This time without deadlines. Maybe a PlayStation. This time with the games bought.",
+        "I am from Amasya. There is a field my grandfather left behind; I am going to farm it. My dog Nova and I are entering agriculture. Small note: I have not seen the field yet and I already spot a pile of unautomated problems. Irrigation schedules, harvest forecasts, Nova’s patrol route… I suspect this is not how retirement works.",
       ],
     ],
     doneEyebrow: "COUNTER FINISHED",
