@@ -175,6 +175,14 @@ export function AboutPage() {
                 kaldıracağını bilmek” dediğim araştırma refleksinin ilk ciddi
                 örneklerinden biri buydu.
               </p>
+              <p>
+                Lise 2’de okuldan sonra hâlâ boş vaktim kalınca babam beni
+                BilgeAdam Akademi’ye gönderdi. İki yıl boyunca kurumun sunduğu
+                eğitimleri yoğun bir tempoda aldım. Merakla kendi kendime
+                açtığım teknik kapı, orada daha düzenli bir temele oturdu;
+                yazılımın yalnızca cihazları kurcalamak değil, sistem kurmak
+                olduğunu görmeye başladım.
+              </p>
             </div>
           </article>
           <article className="origin-story">
