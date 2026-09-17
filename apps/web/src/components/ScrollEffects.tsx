@@ -125,7 +125,7 @@ export function ScrollEffects({ routeKey }: { routeKey: string }) {
       (entries) => {
         entries.forEach((entry) => {
           if (!entry.isIntersecting) return;
-          entry.target.classList.add("is-revealed");
+          (entry.target as HTMLElement).dataset.revealed = "true";
           observer.unobserve(entry.target);
         });
       },
@@ -182,7 +182,7 @@ export function ScrollEffects({ routeKey }: { routeKey: string }) {
       delete main.dataset.motionPage;
       revealElements.forEach((element) => {
         delete element.dataset.reveal;
-        element.classList.remove("is-revealed");
+        delete element.dataset.revealed;
         element.style.removeProperty("--reveal-delay");
       });
       parallaxElements.forEach(([element]) => {
