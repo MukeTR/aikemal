@@ -23,27 +23,55 @@ const steps = [
     note: "Son_final_v3 değil. Bir sonraki sürüm.",
   },
 ];
-export function ApproachSection() {
+const stepsEn = [
+  {
+    title: "First, understand the actual problem.",
+    body: "Who is it for, and what are we solving? The right question is worth more than ten attractive features nobody needs.",
+    note: "‘Let’s build an app’ is lovely. What it does would also be useful.",
+  },
+  {
+    title: "Put the right tool on the table.",
+    body: "Research, code, content or customer flow: I choose for the job, prepare the context and connect each output to the next step.",
+    note: "Tab count is not a success metric. I keep reminding myself.",
+  },
+  {
+    title: "See the first working version.",
+    body: "I reduce the idea to something small and testable, inspect AI output, test the flow and fix what does not hold.",
+    note: "‘Works on my machine’ is a beginning. It should work elsewhere too.",
+  },
+  {
+    title: "Learn. Then take another pass.",
+    body: "What worked in use, and where did it jam? The next move comes from that evidence. Removing a feature is also product work.",
+    note: "Not final_final_v3. Just the next version.",
+  },
+];
+export function ApproachSection({ locale = "tr" }: { locale?: "tr" | "en" }) {
   const [active, setActive] = useState<number | null>(0);
+  const english = locale === "en";
+  const items = english ? stepsEn : steps;
   return (
     <section className="container section approach-section">
       <div>
-        <p className="eyebrow">04 / ÇALIŞMA BİÇİMİ</p>
+        <p className="eyebrow">
+          {english ? "04 / HOW I WORK" : "04 / ÇALIŞMA BİÇİMİ"}
+        </p>
         <h2>
-          İş ciddi.
+          {english ? "The work is serious." : "İş ciddi."}
           <br />
-          Biz o kadar değiliz.
+          {english ? "We do not have to be." : "Biz o kadar değiliz."}
         </h2>
         <p className="section-intro">
-          Mizah yerinde kalsın, iş de yolunda gitsin. Benim üretim döngüm bu
-          kadar.
+          {english
+            ? "Keep the humour in place and the work moving. That is the loop."
+            : "Mizah yerinde kalsın, iş de yolunda gitsin. Benim üretim döngüm bu kadar."}
         </p>
-        <Link to="/ask" className="text-link">
-          Bir fikri masaya koy <ArrowUpRight size={18} />
+        <Link to={english ? "/en/ask" : "/ask"} className="text-link">
+          {english ? "Put an idea on the table" : "Bir fikri masaya koy"}{" "}
+          <ArrowUpRight size={18} />
         </Link>
       </div>
       <div className="steps">
-        {steps.map((s, i) => (
+        {items.map((s, i) => (
           <article
             className={"step " + (active === i ? "is-open" : "")}
             key={s.title}

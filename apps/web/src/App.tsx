@@ -7,7 +7,6 @@ import { ExpertisePage } from "./pages/ExpertisePage";
 import { ProjectDetailPage } from "./pages/ProjectDetailPage";
 import { AboutPage } from "./pages/AboutPage";
 import { AdminProjectsPage } from "./pages/AdminProjectsPage";
-import { EnglishPage } from "./pages/EnglishPage";
 import { EnglishAskPage } from "./pages/EnglishAskPage";
 export function App() {
   return (
@@ -20,7 +19,7 @@ export function App() {
         <Route path="expertise" element={<ExpertisePage />} />
         <Route path="about" element={<AboutPage />} />
         <Route path="admin" element={<AdminProjectsPage />} />
-        <Route path="en" element={<EnglishPage />} />
+        <Route path="en" element={<HomePage locale="en" />} />
         <Route path="en/ask" element={<EnglishAskPage />} />
         <Route
           path="*"

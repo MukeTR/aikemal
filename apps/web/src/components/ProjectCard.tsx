@@ -28,10 +28,13 @@ const artworks: Record<string, string> = {
 export function ProjectCard({
   project,
   index,
+  locale = "tr",
 }: {
   project: Project;
   index: number;
+  locale?: "tr" | "en";
 }) {
+  const english = locale === "en";
   const Icon = icons[project.slug as keyof typeof icons] ?? Layers3;
   const artwork = artworks[project.slug];
   return (
@@ -48,13 +51,21 @@ export function ProjectCard({
         ) : (
           <Icon size={56} strokeWidth={1.2} />
         )}
-        <span className="soon">{projectStatusLabels[project.status]}</span>
+        <span className="soon">
+          {english
+            ? {
+                live: "LIVE",
+                repository: "GITHUB PROJECT",
+                planned: "IDEA STAGE",
+              }[project.status]
+            : projectStatusLabels[project.status]}
+        </span>
         <span className="art-number">0{index + 1}</span>
       </div>
       <div className="project-body">
         <p className="eyebrow">{project.category}</p>
         <h3>
-          <Link to={"/projects/" + project.slug}>
+          <Link to={english ? "/en#projects" : `/projects/${project.slug}`}>
             {project.name}
             <ArrowUpRight size={21} aria-hidden="true" />
           </Link>
@@ -72,11 +83,16 @@ export function ProjectCard({
             target="_blank"
             rel="noreferrer"
           >
-            Aracı aç <ArrowUpRight size={16} />
+            {english ? "Open the product" : "Aracı aç"}{" "}
+            <ArrowUpRight size={16} />
           </a>
         )}
-        <Link className="project-detail-link" to={"/projects/" + project.slug}>
-          Hikâyesine bak <span aria-hidden="true">→</span>
+        <Link
+          className="project-detail-link"
+          to={english ? "/en#projects" : `/projects/${project.slug}`}
+        >
+          {english ? "Read the story" : "Hikâyesine bak"}{" "}
+          <span aria-hidden="true">→</span>
         </Link>
       </div>
     </article>

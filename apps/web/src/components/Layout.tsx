@@ -7,7 +7,7 @@ export function Layout() {
   const { pathname, hash } = useLocation();
   const isEnglish = pathname.startsWith("/en");
   const routeName =
-    pathname === "/"
+    pathname === "/" || pathname === "/en"
       ? "home"
       : pathname.startsWith("/projects/")
         ? "project-detail"
@@ -22,7 +22,7 @@ export function Layout() {
       <Seo />
       <ScrollEffects routeKey={pathname} />
       <a className="skip-link" href="#main">
-        İçeriğe geç
+        {isEnglish ? "Skip to content" : "İçeriğe geç"}
       </a>
       <header className="header container">
         <Link
@@ -38,9 +38,9 @@ export function Layout() {
         <nav aria-label={isEnglish ? "Main navigation" : "Ana menü"}>
           {isEnglish ? (
             <>
-              <a href="#about">About</a>
-              <a href="#expertise">Expertise</a>
-              <a href="#work">Work</a>
+              <Link to="/en#about">About</Link>
+              <Link to="/en#expertise">Expertise</Link>
+              <Link to="/en#projects">Work</Link>
               <Link className="nav-cta" to="/en/ask">
                 Think together <ArrowUpRight size={16} />
               </Link>
