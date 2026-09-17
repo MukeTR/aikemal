@@ -73,7 +73,7 @@ export function Layout() {
         <a href="https://github.com/MukeTR" target="_blank" rel="noreferrer">
           GitHub ↗
         </a>
-        <span>© {new Date().getFullYear()} AI Kemal</span>
+        <span>© 12.11.1995 AI Kemal</span>
         <a
           href="#main"
           aria-label={isEnglish ? "Back to top" : "Sayfanın başına dön"}
