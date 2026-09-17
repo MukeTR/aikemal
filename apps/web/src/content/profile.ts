@@ -64,7 +64,7 @@ export const experience = [
     company: "Freelance",
     role: "E-Commerce & Growth Consultant",
     period: "2023 — devam ediyor",
-    text: "E-ticaret markaları için büyüme stratejileri, dönüşüm ve elde tutma akışları. CRM ve pazarlama otomasyonu; Shopify, pazaryeri operasyonları, SEO ve performans değerlendirmeleri.",
+    text: "E-ticaret markaları için büyüme stratejileri, dönüşüm ve elde tutma akışları geliştirdim; CRM ve pazarlama otomasyonu, Shopify, pazaryeri operasyonları, SEO ve performans süreçlerini birlikte ele aldım. Farklı sektörlerde markalarla yan yana çalışırken edindiğim saha bilgisi ve kurduğum çalışma biçimi, daha sonra Dipixel Media’nın şekillenmeye başladığı zemin oldu. Her müşteri yeni bir problemi, her problem de bir sonraki yapının parçasını getirdi.",
     tags: ["Shopify", "Büyüme", "Otomasyon"],
   },
   {
