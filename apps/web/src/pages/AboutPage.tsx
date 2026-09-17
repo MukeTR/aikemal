@@ -143,8 +143,8 @@ export function AboutPage() {
             Sonra sistemi kurdum.
           </h2>
           <p>
-            Bugün bir ürüne, müşteriye ya da probleme nasıl baktığımı üç unvan
-            değil; bu üç sahne daha iyi anlatıyor.
+            Bugün bir ürüne, müşteriye ya da probleme nasıl baktığımı unvanlar
+            değil; bu sahneler daha iyi anlatıyor.
           </p>
         </header>
         <div className="origin-story-list">
@@ -167,6 +167,15 @@ export function AboutPage() {
                 kaldıracağını bilmek” dediğim araştırma refleksinin ilk ciddi
                 örneklerinden biri buydu.
               </p>
+            </div>
+          </article>
+          <article className="origin-story">
+            <span className="origin-story-number">02</span>
+            <div>
+              <p className="eyebrow">
+                BİLGEADAM / MERAKIN TEMELE DÖNÜŞTÜĞÜ YER
+              </p>
+              <h3>Lise diploması yoktu. Masada doktoralı insanlar vardı.</h3>
               <p>
                 Lise 2’de okuldan sonra hâlâ boş vaktim kalınca babam beni
                 BilgeAdam Akademi’ye gönderdi. İki yıl boyunca kurumun sunduğu
@@ -175,10 +184,18 @@ export function AboutPage() {
                 yazılımın yalnızca cihazları kurcalamak değil, sistem kurmak
                 olduğunu görmeye başladım.
               </p>
+              <p>
+                Daha lise mezunu bile değilken, aralarında doktoralı insanların
+                da bulunduğu ekiplerle ASP.NET projelerinde çalışmaya başladım.
+                Yaşım masadaki herkesten küçüktü ama gerçek bir projede
+                sorumluluk almanın yaşı olmadığını orada öğrendim. Bilmediğimi
+                hızla öğrenip üreten insanların arasına girmek, teknik
+                özgüvenimin temelini oluşturdu.
+              </p>
             </div>
           </article>
           <article className="origin-story">
-            <span className="origin-story-number">02</span>
+            <span className="origin-story-number">03</span>
             <div>
               <p className="eyebrow">TURKCELL / PROBLEM KİŞİ DEĞİLDİ</p>
               <h3>Kafama telefon fırlattı. Iskaladı. Ben faturaya baktım.</h3>
@@ -198,7 +215,7 @@ export function AboutPage() {
             </div>
           </article>
           <article className="origin-story">
-            <span className="origin-story-number">03</span>
+            <span className="origin-story-number">04</span>
             <div>
               <p className="eyebrow">ROKETFY → MELONTİK / SAHADAN ÜRÜNE</p>
               <h3>Günde en az 50 konuşma. Geceleri aynı soru.</h3>
