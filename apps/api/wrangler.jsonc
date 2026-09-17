@@ -15,6 +15,7 @@
     },
     "production": {
       "name": "aikemal",
+      "workers_dev": true,
       "routes": [{ "pattern": "aikemal.com", "custom_domain": true }],
       "assets": {
         "directory": "../web/dist",
