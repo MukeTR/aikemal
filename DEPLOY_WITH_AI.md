@@ -53,6 +53,7 @@ Proje React + Vite frontend, Hono tabanlı Cloudflare Workers API ve isteğe ba�
 - Melontik dönemi Haziran 2026'da bitmiştir; müşteri ölçeği yaklaşık 300'den 1.500'e çıkmıştır.
 - 12 yaşında PlayStation 3 jailbreak araştırması yapılmış; Koçer Elektronik'te işe giriş bundan bir–iki yıl sonra gerçekleşmiştir.
 - BilgeAdam dönemi lise 2'de başlamış, iki yıl sürmüş ve lise mezuniyetinden önce Türkiye'nin önde gelen üniversitelerinden mezun, ülkedeki erken kuşak yazılım profesyonelleriyle ASP.NET projelerinde sorumluluk alınmıştır.
+- Üniversite eğitimi maddi imkânların yetersizliği nedeniyle mümkün olmamış; çalışma hayatına Turkcell'de satış ve müşteri deneyimi sahasından, daha sonra Roketfy'de telesatıştan devam edilmiştir. Bu arka plan acındırılmadan ve tercihmiş gibi gösterilmeden korunmalıdır.
 - Formal eğitim listelenmez. BilgeAdam yalnızca kişisel hikâyedeki biçimlendirici teknik dönem olarak anlatılır.
 - Planlanan özellikleri tamamlanmış gibi gösterme ve üçüncü taraf projelerin sahipliğini iddia etme.
 

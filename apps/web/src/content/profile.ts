@@ -78,7 +78,7 @@ export const experience = [
     company: "Turkcell",
     role: "Customer Experience Specialist",
     period: "Ağustos 2016 — Şubat 2022",
-    text: "Yoğun müşteri etkileşimleri ve elde tutma süreçlerinde, öfkenin arkasındaki gerçek ihtiyacı dinlemeyi öğrendim. Fazla gelen faturası yüzünden telefonunu bana fırlatan bir müşteriyi sakinleştirip problemini çözdüğüm, ardından ihtiyacına uygun yeni telefonla 24 ay daha şirkette kalmasını sağladığım gün; empatiyle satışın aynı masada oturabildiğini gördüm. Müşteri memnuniyeti, kalite performansı ve CRM iyileştirmeleriyle müşteri davranışını sahada öğrendiğim dönemdi.",
+    text: "Üniversite okuyamadığım dönemde çalışma hayatına satış ve müşteri deneyimi sahasından girdim. Yoğun müşteri etkileşimleri ve elde tutma süreçlerinde, öfkenin arkasındaki gerçek ihtiyacı dinlemeyi öğrendim. Fazla gelen faturası yüzünden telefonunu bana fırlatan bir müşteriyi sakinleştirip problemini çözdüğüm, ardından ihtiyacına uygun yeni telefonla 24 ay daha şirkette kalmasını sağladığım gün; empatiyle satışın aynı masada oturabildiğini gördüm. Müşteri memnuniyeti, kalite performansı ve CRM iyileştirmeleriyle müşteri davranışını sahada öğrendiğim dönemdi.",
     tags: ["Müşteri deneyimi", "Retention", "CRM"],
   },
 ];

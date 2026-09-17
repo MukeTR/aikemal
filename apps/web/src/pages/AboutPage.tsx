@@ -211,6 +211,27 @@ export function AboutPage() {
           <article className="origin-story">
             <span className="origin-story-number">03</span>
             <div>
+              <p className="eyebrow">İMKÂNLAR / YOLU KENDİM AÇTIM</p>
+              <h3>Üniversite olmadı. Öğrenmek yine de devam etti.</h3>
+              <p>
+                Üniversite okuyamadım; isteksizlikten değil, o dönemki maddi
+                imkânlar buna yetmediği için. Eğitim hayatının açamadığı yolu
+                beklemek yerine çalışmaya başladım. Teknik merakımla yetişmiş
+                olsam da iş hayatına Turkcell’de satış ve müşteri deneyimi
+                tarafından girdim; çünkü önümde açık olan gerçek saha orasıydı.
+              </p>
+              <p>
+                Bu yol geriye doğru bakınca eksik değil, kuruculuğun zemini
+                oldu. Önce kendimi geliştirdim, sonra ürünlerimi ve şirketlerimi
+                kurmaya başladım. Kurucu olduğunda masaya diplomanı değil; hangi
+                problemi gördüğünü, ne kurduğunu ve onu çalıştırıp
+                çalıştıramadığını koyuyorsun.
+              </p>
+            </div>
+          </article>
+          <article className="origin-story">
+            <span className="origin-story-number">04</span>
+            <div>
               <p className="eyebrow">TURKCELL / PROBLEM KİŞİ DEĞİLDİ</p>
               <h3>Kafama telefon fırlattı. Iskaladı. Ben faturaya baktım.</h3>
               <p>
@@ -229,7 +250,7 @@ export function AboutPage() {
             </div>
           </article>
           <article className="origin-story">
-            <span className="origin-story-number">04</span>
+            <span className="origin-story-number">05</span>
             <div>
               <p className="eyebrow">ROKETFY → MELONTİK / SAHADAN ÜRÜNE</p>
               <h3>Günde en az 50 konuşma. Geceleri aynı soru.</h3>
