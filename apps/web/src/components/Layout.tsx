@@ -69,11 +69,7 @@ export function Layout() {
         <Link className="brand" to={isEnglish ? "/en" : "/"}>
           ai kemal.
         </Link>
-        <p>
-          {isEnglish
-            ? "Serious work. Humour everywhere."
-            : "Ciddiyet işte. Mizah her yerde."}
-        </p>
+        <p>you should see me in a crown</p>
         <a href="https://github.com/MukeTR" target="_blank" rel="noreferrer">
           GitHub ↗
         </a>
