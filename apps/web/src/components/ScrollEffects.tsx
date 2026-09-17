@@ -59,6 +59,15 @@ const pageGroups: Record<string, RevealGroup[]> = {
     [".project-capabilities > *", ["document-rise", "wipe"]],
     [".capability-grid > *", ["scale", "document-rise"]],
   ],
+  emeklilik: [
+    [".retirement-hero > *", ["slide-left", "liquid-scale"]],
+    [".retirement-tile", ["counter-pop"]],
+    [".retirement-progress", ["wipe"]],
+    [".retirement-stats article", ["scale", "rise", "scale"]],
+    [".retirement-plan > *", ["text-unfold", "slide-right"]],
+    [".retirement-plan-list article", ["slide-left", "rise", "slide-right"]],
+    [".small-cta", ["scale"]],
+  ],
   admin: [
     [".admin-hero > *", ["slide-left", "slide-right"]],
     [".admin-form", ["document-rise"]],
@@ -92,9 +101,11 @@ export function ScrollEffects({ routeKey }: { routeKey: string }) {
         ? "home"
         : routeKey === "/en/ask"
           ? "ask"
-          : routeKey.startsWith("/projects/")
-            ? "project-detail"
-            : routeKey.slice(1).split("/")[0] || "home";
+          : routeKey === "/en/retirement"
+            ? "emeklilik"
+            : routeKey.startsWith("/projects/")
+              ? "project-detail"
+              : routeKey.slice(1).split("/")[0] || "home";
     const revealGroups = [
       ...sharedGroups,
       ...(pageGroups[pageName] ?? fallbackGroups),

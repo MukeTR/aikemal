@@ -41,6 +41,7 @@ export function Layout() {
               <Link to="/en#about">About</Link>
               <Link to="/en#expertise">Expertise</Link>
               <Link to="/en#projects">Work</Link>
+              <NavLink to="/en/retirement">Retirement</NavLink>
               <Link className="nav-cta" to="/en/ask">
                 Think together <ArrowUpRight size={16} />
               </Link>
@@ -50,6 +51,7 @@ export function Layout() {
               <NavLink to="/about">Kemal kim?</NavLink>
               <NavLink to="/expertise">Uzmanlıklar</NavLink>
               <NavLink to="/projects">Projeler & araçlar</NavLink>
+              <NavLink to="/emeklilik">Emeklilik</NavLink>
               <Link className="nav-cta" to="/ask">
                 Birlikte düşünelim <ArrowUpRight size={16} />
               </Link>

@@ -110,6 +110,30 @@ const pageMeta: Record<string, PageMeta> = {
       inLanguage: "tr-TR",
     },
   },
+  "/emeklilik": {
+    title: "Emeklilik geri sayımı — AI Kemal",
+    description:
+      "Mustafa Kemal Karataş 35’te, 12 Kasım 2030’da emekli oluyor. Resmî geri sayım, kalan iş günleri ve emeklilik planı.",
+    schema: {
+      "@type": "WebPage",
+      name: "AI Kemal emeklilik geri sayımı",
+      url: `${origin}/emeklilik`,
+      inLanguage: "tr-TR",
+      about: { "@id": `${origin}/#mustafa-kemal-karatas` },
+    },
+  },
+  "/en/retirement": {
+    title: "Retirement countdown — AI Kemal",
+    description:
+      "Mustafa Kemal Karataş retires at 35, on 12 November 2030. The official countdown, remaining working days and the plan.",
+    schema: {
+      "@type": "WebPage",
+      name: "AI Kemal retirement countdown",
+      url: `${origin}/en/retirement`,
+      inLanguage: "en",
+      about: { "@id": `${origin}/#mustafa-kemal-karatas` },
+    },
+  },
   "/admin": {
     title: "Yönetim — AI Kemal",
     description: "Yerel proje vitrini yönetimi.",

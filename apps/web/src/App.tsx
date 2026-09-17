@@ -8,6 +8,7 @@ import { ProjectDetailPage } from "./pages/ProjectDetailPage";
 import { AboutPage } from "./pages/AboutPage";
 import { AdminProjectsPage } from "./pages/AdminProjectsPage";
 import { EnglishAskPage } from "./pages/EnglishAskPage";
+import { RetirementPage } from "./pages/RetirementPage";
 export function App() {
   return (
     <Routes>
@@ -18,9 +19,11 @@ export function App() {
         <Route path="projects/:slug" element={<ProjectDetailPage />} />
         <Route path="expertise" element={<ExpertisePage />} />
         <Route path="about" element={<AboutPage />} />
+        <Route path="emeklilik" element={<RetirementPage />} />
         <Route path="admin" element={<AdminProjectsPage />} />
         <Route path="en" element={<HomePage locale="en" />} />
         <Route path="en/ask" element={<EnglishAskPage />} />
+        <Route path="en/retirement" element={<RetirementPage locale="en" />} />
         <Route
           path="*"
           element={
