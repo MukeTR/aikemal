@@ -69,6 +69,7 @@ const copy: Record<string, Partial<Project>> = {
   karmatik: {
     category: "E-COMMERCE",
     tags: ["Live", "Solopreneur", "Profitability", "Buybox"],
+    highlight: { value: "60+ brands", label: "actively use Kârmatik" },
     description:
       "Profit, price competition and marketing decisions in one panel. Excel may take the afternoon off.",
     problem:

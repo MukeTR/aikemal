@@ -31,6 +31,12 @@ export function ProjectDetailPage() {
           <span key={t}>{t}</span>
         ))}
       </div>
+      {p.highlight && (
+        <p className="detail-highlight">
+          <strong>{p.highlight.value}</strong>
+          <span>{p.highlight.label}</span>
+        </p>
+      )}
       <div className="case-layout">
         <div className="case-main">
           <section>

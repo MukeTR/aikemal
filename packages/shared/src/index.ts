@@ -15,6 +15,7 @@ export type Project = {
   architectureNote?: string;
   features?: { title: string; description: string; source: string }[];
   integrations?: string;
+  highlight?: { value: string; label: string };
 };
 export const projects: Project[] = [
   {
@@ -107,6 +108,7 @@ export const projects: Project[] = [
     status: "live",
     website: "https://karmatik.io",
     tags: ["Yayında", "Solopreneur", "Kârlılık", "Buybox takibi"],
+    highlight: { value: "+60 marka", label: "Kârmatik’i aktif kullanıyor" },
     description:
       "Mağazanın kârı, fiyat rekabeti ve pazarlama kararları aynı panelde. Excel biraz dinlensin.",
     problem:
